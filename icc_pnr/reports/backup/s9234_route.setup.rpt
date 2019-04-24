@@ -1,0 +1,1682 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 50
+Design : s9234
+Version: L-2016.03-SP5-1
+Date   : Sat Mar  9 16:38:33 2019
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 125/125/125
+
+Information: Percent of Arnoldi-based delays =  9.38%
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: g6374 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g41 (in)                                 0.00 @     2.40 r
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 r
+  U1602/Y (NAND3X0_RVT)                    0.11 &     2.60 f
+  U1581/Y (NOR2X0_RVT)                     0.15 &     2.74 r
+  U1593/Y (NAND2X0_RVT)                    0.09 &     2.84 f
+  g6374 (out)                              0.00 &     2.84 f
+  data arrival time                                   2.84
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.84
+  -----------------------------------------------------------
+  slack (MET)                                         2.01
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: g6372 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g41 (in)                                 0.00 @     2.40 r
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 r
+  U1602/Y (NAND3X0_RVT)                    0.11 &     2.60 f
+  U1581/Y (NOR2X0_RVT)                     0.15 &     2.74 r
+  U1594/Y (NAND2X0_RVT)                    0.09 &     2.83 f
+  g6372 (out)                              0.00 &     2.83 f
+  data arrival time                                   2.83
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.83
+  -----------------------------------------------------------
+  slack (MET)                                         2.02
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: g6370 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g41 (in)                                 0.00 @     2.40 r
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 r
+  U1602/Y (NAND3X0_RVT)                    0.11 &     2.60 f
+  U1581/Y (NOR2X0_RVT)                     0.15 &     2.74 r
+  U1595/Y (NAND2X0_RVT)                    0.08 &     2.82 f
+  g6370 (out)                              0.00 &     2.82 f
+  data arrival time                                   2.82
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.82
+  -----------------------------------------------------------
+  slack (MET)                                         2.03
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: g6368 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g41 (in)                                 0.00 @     2.40 r
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 r
+  U1602/Y (NAND3X0_RVT)                    0.11 &     2.60 f
+  U1581/Y (NOR2X0_RVT)                     0.15 &     2.74 r
+  U1596/Y (NAND2X0_RVT)                    0.07 &     2.82 f
+  g6368 (out)                              0.00 &     2.82 f
+  data arrival time                                   2.82
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.82
+  -----------------------------------------------------------
+  slack (MET)                                         2.03
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: g6366 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g41 (in)                                 0.00 @     2.40 r
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 r
+  U1602/Y (NAND3X0_RVT)                    0.11 &     2.60 f
+  U1581/Y (NOR2X0_RVT)                     0.15 &     2.74 r
+  U1590/Y (NAND2X0_RVT)                    0.07 &     2.82 f
+  g6366 (out)                              0.00 &     2.82 f
+  data arrival time                                   2.82
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.82
+  -----------------------------------------------------------
+  slack (MET)                                         2.03
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: g6284 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g41 (in)                                 0.00 @     2.40 r
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 r
+  U1602/Y (NAND3X0_RVT)                    0.11 &     2.60 f
+  U1581/Y (NOR2X0_RVT)                     0.15 &     2.74 r
+  U1598/Y (NAND2X0_RVT)                    0.06 &     2.80 f
+  g6284 (out)                              0.00 &     2.80 f
+  data arrival time                                   2.80
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.80
+  -----------------------------------------------------------
+  slack (MET)                                         2.05
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: g6364 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g41 (in)                                 0.00 @     2.40 r
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 r
+  U1602/Y (NAND3X0_RVT)                    0.11 &     2.60 f
+  U1581/Y (NOR2X0_RVT)                     0.15 &     2.74 r
+  U1597/Y (NAND2X0_RVT)                    0.06 &     2.80 f
+  g6364 (out)                              0.00 &     2.80 f
+  data arrival time                                   2.80
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.80
+  -----------------------------------------------------------
+  slack (MET)                                         2.05
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: g6362 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g41 (in)                                 0.00 @     2.40 r
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 r
+  U1602/Y (NAND3X0_RVT)                    0.11 &     2.60 f
+  U1581/Y (NOR2X0_RVT)                     0.15 &     2.74 r
+  U1591/Y (NAND2X0_RVT)                    0.05 &     2.80 f
+  g6362 (out)                              0.00 &     2.80 f
+  data arrival time                                   2.80
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.80
+  -----------------------------------------------------------
+  slack (MET)                                         2.05
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: g6360 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g41 (in)                                 0.00 @     2.40 r
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 r
+  U1602/Y (NAND3X0_RVT)                    0.11 &     2.60 f
+  U1581/Y (NOR2X0_RVT)                     0.15 &     2.74 r
+  U1592/Y (NAND2X0_RVT)                    0.05 &     2.80 f
+  g6360 (out)                              0.00 &     2.80 f
+  data arrival time                                   2.80
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.80
+  -----------------------------------------------------------
+  slack (MET)                                         2.05
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: g6282 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g41 (in)                                 0.00 @     2.40 r
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 r
+  U1602/Y (NAND3X0_RVT)                    0.11 &     2.60 f
+  g6282 (out)                              0.00 &     2.60 f
+  data arrival time                                   2.60
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.60
+  -----------------------------------------------------------
+  slack (MET)                                         2.25
+
+
+  Startpoint: g102 (input port clocked by ideal_clock1)
+  Endpoint: g2584 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g102 (in)                                0.00 @     2.40 f
+  U1038/Y (INVX1_RVT)                      0.03 @     2.43 r
+  U1287/Y (NAND2X0_RVT)                    0.07 &     2.50 f
+  U959/Y (INVX1_RVT)                       0.08 &     2.58 r
+  g2584 (out)                              0.00 &     2.58 r
+  data arrival time                                   2.58
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.58
+  -----------------------------------------------------------
+  slack (MET)                                         2.27
+
+
+  Startpoint: g567 (input port clocked by ideal_clock1)
+  Endpoint: g4121 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g567 (in)                                0.00 @     2.40 f
+  U1297/Y (NAND2X0_RVT)                    0.15 @     2.55 r
+  g4121 (out)                              0.00 &     2.55 r
+  data arrival time                                   2.55
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.55
+  -----------------------------------------------------------
+  slack (MET)                                         2.30
+
+
+  Startpoint: g45 (input port clocked by ideal_clock1)
+  Endpoint: g4108 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g45 (in)                                 0.00 @     2.40 r
+  g4108 (out)                              0.00 @     2.40 r
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g36 (input port clocked by ideal_clock1)
+  Endpoint: g4100 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g36 (in)                                 0.00 @     2.40 r
+  g4100 (out)                              0.00 @     2.40 r
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g42 (input port clocked by ideal_clock1)
+  Endpoint: g4106 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g42 (in)                                 0.00 @     2.40 r
+  g4106 (out)                              0.00 @     2.40 r
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g564 (input port clocked by ideal_clock1)
+  Endpoint: g4422 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g564 (in)                                0.00 @     2.40 f
+  g4422 (out)                              0.00 @     2.40 f
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g22 (input port clocked by ideal_clock1)
+  Endpoint: g4104 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g22 (in)                                 0.00 @     2.40 f
+  g4104 (out)                              0.00 @     2.40 f
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g40 (input port clocked by ideal_clock1)
+  Endpoint: g4105 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g40 (in)                                 0.00 @     2.40 r
+  g4105 (out)                              0.00 @     2.40 r
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g38 (input port clocked by ideal_clock1)
+  Endpoint: g4102 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g38 (in)                                 0.00 @     2.40 r
+  g4102 (out)                              0.00 @     2.40 r
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g32 (input port clocked by ideal_clock1)
+  Endpoint: g4099 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g32 (in)                                 0.00 @     2.40 r
+  g4099 (out)                              0.00 @     2.40 r
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g37 (input port clocked by ideal_clock1)
+  Endpoint: g4101 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g37 (in)                                 0.00 @     2.40 r
+  g4101 (out)                              0.00 @     2.40 r
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g39 (input port clocked by ideal_clock1)
+  Endpoint: g4103 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g39 (in)                                 0.00 @     2.40 f
+  g4103 (out)                              0.00 @     2.40 f
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: g4110 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g41 (in)                                 0.00 @     2.40 r
+  g4110 (out)                              0.00 @     2.40 r
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g47 (input port clocked by ideal_clock1)
+  Endpoint: g4112 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g47 (in)                                 0.00 @     2.40 r
+  g4112 (out)                              0.00 @     2.40 r
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g23 (input port clocked by ideal_clock1)
+  Endpoint: g4098 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g23 (in)                                 0.00 @     2.40 r
+  g4098 (out)                              0.00 @     2.40 r
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g46 (input port clocked by ideal_clock1)
+  Endpoint: g4109 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g46 (in)                                 0.00 @     2.40 r
+  g4109 (out)                              0.00 @     2.40 r
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g705 (input port clocked by ideal_clock1)
+  Endpoint: g3222 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g705 (in)                                0.00 @     2.40 r
+  g3222 (out)                              0.00 @     2.40 r
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g44 (input port clocked by ideal_clock1)
+  Endpoint: g4107 (output port clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g44 (in)                                 0.00 @     2.40 r
+  g4107 (out)                              0.00 @     2.40 r
+  data arrival time                                   2.40
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (ideal)              0.40       6.90
+  clock uncertainty                       -0.05       6.85
+  output external delay                   -2.00       4.85
+  data required time                                  4.85
+  -----------------------------------------------------------
+  data required time                                  4.85
+  data arrival time                                  -2.40
+  -----------------------------------------------------------
+  slack (MET)                                         2.45
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: DFF_44/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g41 (in)                                 0.00 @     2.40 f
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 f
+  U1173/Y (AND4X1_RVT)                     0.12 &     2.60 f
+  U1695/Y (NAND3X0_RVT)                    0.07 &     2.67 r
+  U1690/Y (NAND3X0_RVT)                    0.26 &     2.93 f
+  U911/Y (INVX1_RVT)                       0.09 &     3.02 r
+  U1705/Y (NAND4X0_RVT)                    0.11 &     3.13 f
+  U1684/Y (OR3X1_RVT)                      0.11 &     3.24 f
+  U1687/Y (INVX0_RVT)                      0.07 &     3.31 r
+  U1180/Y (AO21X1_RVT)                     0.07 &     3.38 r
+  U1686/Y (AOI221X1_RVT)                   0.11 &     3.48 f
+  U1152/Y (NAND4X0_RVT)                    0.09 &     3.58 r
+  DFF_44/d (dff_167)                       0.00       3.58 r
+  DFF_44/q_reg/D (DFFX1_RVT)               0.00 &     3.58 r
+  data arrival time                                   3.58
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_44/q_reg/CLK (DFFX1_RVT)             0.00       6.46 r
+  library setup time                      -0.09       6.37
+  data required time                                  6.37
+  -----------------------------------------------------------
+  data required time                                  6.37
+  data arrival time                                  -3.58
+  -----------------------------------------------------------
+  slack (MET)                                         2.79
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: DFF_186/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g41 (in)                                 0.00 @     2.40 f
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 f
+  U1173/Y (AND4X1_RVT)                     0.12 &     2.60 f
+  U1695/Y (NAND3X0_RVT)                    0.07 &     2.67 r
+  U1690/Y (NAND3X0_RVT)                    0.26 &     2.93 f
+  U911/Y (INVX1_RVT)                       0.09 &     3.02 r
+  U1705/Y (NAND4X0_RVT)                    0.11 &     3.13 f
+  U1684/Y (OR3X1_RVT)                      0.11 &     3.24 f
+  U1687/Y (INVX0_RVT)                      0.07 &     3.31 r
+  U1181/Y (AO21X1_RVT)                     0.07 &     3.38 r
+  U1689/Y (AOI221X1_RVT)                   0.11 &     3.48 f
+  U1159/Y (NAND4X0_RVT)                    0.08 &     3.56 r
+  DFF_186/d (dff_25)                       0.00       3.56 r
+  DFF_186/q_reg/D (DFFX1_RVT)              0.00 &     3.56 r
+  data arrival time                                   3.56
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_186/q_reg/CLK (DFFX1_RVT)            0.00       6.46 r
+  library setup time                      -0.08       6.38
+  data required time                                  6.38
+  -----------------------------------------------------------
+  data required time                                  6.38
+  data arrival time                                  -3.56
+  -----------------------------------------------------------
+  slack (MET)                                         2.82
+
+
+  Startpoint: g102 (input port clocked by ideal_clock1)
+  Endpoint: DFF_22/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g102 (in)                                0.00 @     2.40 f
+  U1038/Y (INVX1_RVT)                      0.03 @     2.43 r
+  U1124/Y (NAND3X0_RVT)                    0.09 &     2.51 f
+  U893/Y (AND2X1_RVT)                      0.11 &     2.63 f
+  U1062/Y (AO22X1_RVT)                     0.11 &     2.74 f
+  U916/Y (OR3X2_RVT)                       0.10 &     2.84 f
+  U1183/Y (INVX1_RVT)                      0.03 &     2.87 r
+  U1182/Y (NAND2X0_RVT)                    0.06 &     2.93 f
+  U1123/Y (INVX1_RVT)                      0.04 &     2.98 r
+  U1122/Y (NAND3X0_RVT)                    0.07 &     3.05 f
+  U1190/Y (OAI22X1_RVT)                    0.12 &     3.17 r
+  U1188/Y (NAND2X0_RVT)                    0.05 &     3.22 f
+  U915/Y (NAND2X0_RVT)                     0.08 &     3.30 r
+  U906/Y (AND4X1_RVT)                      0.17 &     3.47 r
+  U1100/Y (AO21X1_RVT)                     0.08 &     3.55 r
+  DFF_22/d (dff_189)                       0.00       3.55 r
+  DFF_22/q_reg/D (DFFX1_RVT)               0.00 &     3.55 r
+  data arrival time                                   3.55
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_22/q_reg/CLK (DFFX1_RVT)             0.00       6.46 r
+  library setup time                      -0.06       6.39
+  data required time                                  6.39
+  -----------------------------------------------------------
+  data required time                                  6.39
+  data arrival time                                  -3.55
+  -----------------------------------------------------------
+  slack (MET)                                         2.85
+
+
+  Startpoint: g102 (input port clocked by ideal_clock1)
+  Endpoint: DFF_199/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g102 (in)                                0.00 @     2.40 f
+  U1038/Y (INVX1_RVT)                      0.03 @     2.43 r
+  U1124/Y (NAND3X0_RVT)                    0.09 &     2.51 f
+  U893/Y (AND2X1_RVT)                      0.11 &     2.63 f
+  U1062/Y (AO22X1_RVT)                     0.11 &     2.74 f
+  U916/Y (OR3X2_RVT)                       0.10 &     2.84 f
+  U1183/Y (INVX1_RVT)                      0.03 &     2.87 r
+  U1182/Y (NAND2X0_RVT)                    0.06 &     2.93 f
+  U1123/Y (INVX1_RVT)                      0.04 &     2.98 r
+  U1122/Y (NAND3X0_RVT)                    0.07 &     3.05 f
+  U1190/Y (OAI22X1_RVT)                    0.12 &     3.17 r
+  U1188/Y (NAND2X0_RVT)                    0.05 &     3.22 f
+  U915/Y (NAND2X0_RVT)                     0.08 &     3.30 r
+  U906/Y (AND4X1_RVT)                      0.17 &     3.47 r
+  U886/Y (AO21X1_RVT)                      0.08 &     3.54 r
+  DFF_199/d (dff_12)                       0.00       3.54 r
+  DFF_199/q_reg/D (DFFX1_RVT)              0.00 &     3.54 r
+  data arrival time                                   3.54
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_199/q_reg/CLK (DFFX1_RVT)            0.00       6.46 r
+  library setup time                      -0.06       6.40
+  data required time                                  6.40
+  -----------------------------------------------------------
+  data required time                                  6.40
+  data arrival time                                  -3.54
+  -----------------------------------------------------------
+  slack (MET)                                         2.85
+
+
+  Startpoint: g102 (input port clocked by ideal_clock1)
+  Endpoint: DFF_130/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g102 (in)                                0.00 @     2.40 f
+  U1038/Y (INVX1_RVT)                      0.03 @     2.43 r
+  U1124/Y (NAND3X0_RVT)                    0.09 &     2.51 f
+  U893/Y (AND2X1_RVT)                      0.11 &     2.63 f
+  U1062/Y (AO22X1_RVT)                     0.11 &     2.74 f
+  U916/Y (OR3X2_RVT)                       0.10 &     2.84 f
+  U1183/Y (INVX1_RVT)                      0.03 &     2.87 r
+  U1182/Y (NAND2X0_RVT)                    0.06 &     2.93 f
+  U1123/Y (INVX1_RVT)                      0.04 &     2.98 r
+  U1122/Y (NAND3X0_RVT)                    0.07 &     3.05 f
+  U1190/Y (OAI22X1_RVT)                    0.12 &     3.17 r
+  U1188/Y (NAND2X0_RVT)                    0.05 &     3.22 f
+  U915/Y (NAND2X0_RVT)                     0.08 &     3.30 r
+  U906/Y (AND4X1_RVT)                      0.17 &     3.47 r
+  U882/Y (AO21X1_RVT)                      0.07 &     3.54 r
+  DFF_130/d (dff_81)                       0.00       3.54 r
+  DFF_130/q_reg/D (DFFX1_RVT)              0.00 &     3.54 r
+  data arrival time                                   3.54
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_130/q_reg/CLK (DFFX1_RVT)            0.00       6.46 r
+  library setup time                      -0.06       6.40
+  data required time                                  6.40
+  -----------------------------------------------------------
+  data required time                                  6.40
+  data arrival time                                  -3.54
+  -----------------------------------------------------------
+  slack (MET)                                         2.85
+
+
+  Startpoint: g102 (input port clocked by ideal_clock1)
+  Endpoint: DFF_136/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g102 (in)                                0.00 @     2.40 f
+  U1038/Y (INVX1_RVT)                      0.03 @     2.43 r
+  U1124/Y (NAND3X0_RVT)                    0.09 &     2.51 f
+  U893/Y (AND2X1_RVT)                      0.11 &     2.63 f
+  U1062/Y (AO22X1_RVT)                     0.11 &     2.74 f
+  U916/Y (OR3X2_RVT)                       0.10 &     2.84 f
+  U1183/Y (INVX1_RVT)                      0.03 &     2.87 r
+  U1182/Y (NAND2X0_RVT)                    0.06 &     2.93 f
+  U1123/Y (INVX1_RVT)                      0.04 &     2.98 r
+  U1122/Y (NAND3X0_RVT)                    0.07 &     3.05 f
+  U1190/Y (OAI22X1_RVT)                    0.12 &     3.17 r
+  U1188/Y (NAND2X0_RVT)                    0.05 &     3.22 f
+  U915/Y (NAND2X0_RVT)                     0.08 &     3.30 r
+  U906/Y (AND4X1_RVT)                      0.17 &     3.47 r
+  U1108/Y (AO21X1_RVT)                     0.07 &     3.54 r
+  DFF_136/d (dff_75)                       0.00       3.54 r
+  DFF_136/q_reg/D (DFFX1_RVT)              0.00 &     3.54 r
+  data arrival time                                   3.54
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_136/q_reg/CLK (DFFX1_RVT)            0.00       6.46 r
+  library setup time                      -0.06       6.40
+  data required time                                  6.40
+  -----------------------------------------------------------
+  data required time                                  6.40
+  data arrival time                                  -3.54
+  -----------------------------------------------------------
+  slack (MET)                                         2.85
+
+
+  Startpoint: g102 (input port clocked by ideal_clock1)
+  Endpoint: DFF_29/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g102 (in)                                0.00 @     2.40 f
+  U1038/Y (INVX1_RVT)                      0.03 @     2.43 r
+  U1124/Y (NAND3X0_RVT)                    0.09 &     2.51 f
+  U893/Y (AND2X1_RVT)                      0.11 &     2.63 f
+  U1062/Y (AO22X1_RVT)                     0.11 &     2.74 f
+  U916/Y (OR3X2_RVT)                       0.10 &     2.84 f
+  U1183/Y (INVX1_RVT)                      0.03 &     2.87 r
+  U1182/Y (NAND2X0_RVT)                    0.06 &     2.93 f
+  U1123/Y (INVX1_RVT)                      0.04 &     2.98 r
+  U1122/Y (NAND3X0_RVT)                    0.07 &     3.05 f
+  U1190/Y (OAI22X1_RVT)                    0.12 &     3.17 r
+  U1188/Y (NAND2X0_RVT)                    0.05 &     3.22 f
+  U915/Y (NAND2X0_RVT)                     0.08 &     3.30 r
+  U906/Y (AND4X1_RVT)                      0.17 &     3.47 r
+  U1104/Y (AO21X1_RVT)                     0.07 &     3.54 r
+  DFF_29/d (dff_182)                       0.00       3.54 r
+  DFF_29/q_reg/D (DFFX1_RVT)               0.00 &     3.54 r
+  data arrival time                                   3.54
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_29/q_reg/CLK (DFFX1_RVT)             0.00       6.46 r
+  library setup time                      -0.06       6.40
+  data required time                                  6.40
+  -----------------------------------------------------------
+  data required time                                  6.40
+  data arrival time                                  -3.54
+  -----------------------------------------------------------
+  slack (MET)                                         2.85
+
+
+  Startpoint: g102 (input port clocked by ideal_clock1)
+  Endpoint: DFF_203/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g102 (in)                                0.00 @     2.40 f
+  U1038/Y (INVX1_RVT)                      0.03 @     2.43 r
+  U1124/Y (NAND3X0_RVT)                    0.09 &     2.51 f
+  U893/Y (AND2X1_RVT)                      0.11 &     2.63 f
+  U1062/Y (AO22X1_RVT)                     0.11 &     2.74 f
+  U916/Y (OR3X2_RVT)                       0.10 &     2.84 f
+  U1183/Y (INVX1_RVT)                      0.03 &     2.87 r
+  U1182/Y (NAND2X0_RVT)                    0.06 &     2.93 f
+  U1123/Y (INVX1_RVT)                      0.04 &     2.98 r
+  U1122/Y (NAND3X0_RVT)                    0.07 &     3.05 f
+  U1190/Y (OAI22X1_RVT)                    0.12 &     3.17 r
+  U1188/Y (NAND2X0_RVT)                    0.05 &     3.22 f
+  U915/Y (NAND2X0_RVT)                     0.08 &     3.30 r
+  U906/Y (AND4X1_RVT)                      0.17 &     3.47 r
+  U1112/Y (AO21X1_RVT)                     0.07 &     3.54 r
+  DFF_203/d (dff_8)                        0.00       3.54 r
+  DFF_203/q_reg/D (DFFX1_RVT)              0.00 &     3.54 r
+  data arrival time                                   3.54
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_203/q_reg/CLK (DFFX1_RVT)            0.00       6.46 r
+  library setup time                      -0.06       6.40
+  data required time                                  6.40
+  -----------------------------------------------------------
+  data required time                                  6.40
+  data arrival time                                  -3.54
+  -----------------------------------------------------------
+  slack (MET)                                         2.86
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: DFF_63/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g41 (in)                                 0.00 @     2.40 f
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 f
+  U1173/Y (AND4X1_RVT)                     0.12 &     2.60 f
+  U1695/Y (NAND3X0_RVT)                    0.07 &     2.67 r
+  U1690/Y (NAND3X0_RVT)                    0.26 &     2.93 f
+  U911/Y (INVX1_RVT)                       0.09 &     3.02 r
+  U1705/Y (NAND4X0_RVT)                    0.11 &     3.13 f
+  U1684/Y (OR3X1_RVT)                      0.11 &     3.24 f
+  U1687/Y (INVX0_RVT)                      0.07 &     3.31 r
+  U1699/Y (AOI221X1_RVT)                   0.11 &     3.42 f
+  U1155/Y (NAND4X0_RVT)                    0.09 &     3.51 r
+  DFF_63/d (dff_148)                       0.00       3.51 r
+  DFF_63/q_reg/D (DFFX1_RVT)               0.00 &     3.51 r
+  data arrival time                                   3.51
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_63/q_reg/CLK (DFFX1_RVT)             0.00       6.46 r
+  library setup time                      -0.09       6.37
+  data required time                                  6.37
+  -----------------------------------------------------------
+  data required time                                  6.37
+  data arrival time                                  -3.51
+  -----------------------------------------------------------
+  slack (MET)                                         2.86
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: DFF_27/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g41 (in)                                 0.00 @     2.40 f
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 f
+  U1173/Y (AND4X1_RVT)                     0.12 &     2.60 f
+  U1695/Y (NAND3X0_RVT)                    0.07 &     2.67 r
+  U1690/Y (NAND3X0_RVT)                    0.26 &     2.93 f
+  U911/Y (INVX1_RVT)                       0.09 &     3.02 r
+  U1705/Y (NAND4X0_RVT)                    0.11 &     3.13 f
+  U1684/Y (OR3X1_RVT)                      0.11 &     3.24 f
+  U1687/Y (INVX0_RVT)                      0.07 &     3.31 r
+  U1700/Y (AOI221X1_RVT)                   0.11 &     3.42 f
+  U1148/Y (NAND4X0_RVT)                    0.08 &     3.51 r
+  DFF_27/d (dff_184)                       0.00       3.51 r
+  DFF_27/q_reg/D (DFFX1_RVT)               0.00 &     3.51 r
+  data arrival time                                   3.51
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_27/q_reg/CLK (DFFX1_RVT)             0.00       6.46 r
+  library setup time                      -0.08       6.38
+  data required time                                  6.38
+  -----------------------------------------------------------
+  data required time                                  6.38
+  data arrival time                                  -3.51
+  -----------------------------------------------------------
+  slack (MET)                                         2.87
+
+
+  Startpoint: g306 (input port clocked by ideal_clock1)
+  Endpoint: DFF_206/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g306 (in)                                0.00 @     2.40 r
+  U1052/Y (INVX1_RVT)                      0.01 @     2.41 f
+  U892/Y (AND2X1_RVT)                      0.06 &     2.48 f
+  U895/Y (NAND3X0_RVT)                     0.06 &     2.54 r
+  U877/Y (AOI21X1_RVT)                     0.14 &     2.68 f
+  U1431/Y (INVX0_RVT)                      0.11 &     2.79 r
+  U1271/Y (NAND4X0_RVT)                    0.12 &     2.91 f
+  U1289/Y (INVX1_RVT)                      0.05 &     2.96 r
+  U1288/Y (NAND2X0_RVT)                    0.07 &     3.03 f
+  U949/Y (INVX1_RVT)                       0.05 &     3.09 r
+  U1099/Y (AO222X1_RVT)                    0.13 &     3.22 r
+  U1098/Y (NAND2X0_RVT)                    0.06 &     3.27 f
+  U1097/Y (XNOR2X1_RVT)                    0.16 &     3.43 r
+  U1096/Y (AO21X1_RVT)                     0.09 &     3.52 r
+  DFF_206/d (dff_5)                        0.00       3.52 r
+  DFF_206/q_reg/D (DFFX1_RVT)              0.00 &     3.52 r
+  data arrival time                                   3.52
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.00       6.50
+  clock uncertainty                       -0.05       6.45
+  DFF_206/q_reg/CLK (DFFX1_RVT)            0.00       6.45 r
+  library setup time                      -0.06       6.39
+  data required time                                  6.39
+  -----------------------------------------------------------
+  data required time                                  6.39
+  data arrival time                                  -3.52
+  -----------------------------------------------------------
+  slack (MET)                                         2.88
+
+
+  Startpoint: g306 (input port clocked by ideal_clock1)
+  Endpoint: DFF_106/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 r
+  g306 (in)                                0.00 @     2.40 r
+  U1052/Y (INVX1_RVT)                      0.01 @     2.41 f
+  U892/Y (AND2X1_RVT)                      0.06 &     2.48 f
+  U895/Y (NAND3X0_RVT)                     0.06 &     2.54 r
+  U877/Y (AOI21X1_RVT)                     0.14 &     2.68 f
+  U1431/Y (INVX0_RVT)                      0.11 &     2.79 r
+  U1271/Y (NAND4X0_RVT)                    0.12 &     2.91 f
+  U1289/Y (INVX1_RVT)                      0.05 &     2.96 r
+  U1288/Y (NAND2X0_RVT)                    0.07 &     3.03 f
+  U949/Y (INVX1_RVT)                       0.05 &     3.09 r
+  U1087/Y (AO222X1_RVT)                    0.13 &     3.22 r
+  U1086/Y (NAND2X0_RVT)                    0.05 &     3.27 f
+  U1085/Y (XNOR2X1_RVT)                    0.15 &     3.42 r
+  U1084/Y (AO21X1_RVT)                     0.08 &     3.51 r
+  DFF_106/d (dff_105)                      0.00       3.51 r
+  DFF_106/q_reg/D (DFFX1_RVT)              0.00 &     3.51 r
+  data arrival time                                   3.51
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.00       6.50
+  clock uncertainty                       -0.05       6.45
+  DFF_106/q_reg/CLK (DFFX1_RVT)            0.00       6.45 r
+  library setup time                      -0.06       6.39
+  data required time                                  6.39
+  -----------------------------------------------------------
+  data required time                                  6.39
+  data arrival time                                  -3.51
+  -----------------------------------------------------------
+  slack (MET)                                         2.88
+
+
+  Startpoint: g314 (input port clocked by ideal_clock1)
+  Endpoint: DFF_65/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g314 (in)                                0.00 @     2.40 f
+  U1589/Y (INVX0_RVT)                      0.04 @     2.44 r
+  U1585/Y (NAND3X0_RVT)                    0.13 &     2.56 f
+  U1584/Y (NAND2X0_RVT)                    0.18 &     2.75 r
+  U1125/Y (NAND3X0_RVT)                    0.11 &     2.85 f
+  U1060/Y (OA22X1_RVT)                     0.12 &     2.97 f
+  U1059/Y (OA21X1_RVT)                     0.12 &     3.09 f
+  U1577/Y (INVX0_RVT)                      0.07 &     3.16 r
+  U902/Y (NAND3X0_RVT)                     0.10 &     3.26 f
+  U1604/Y (INVX0_RVT)                      0.14 &     3.40 r
+  U1080/Y (AO21X1_RVT)                     0.08 &     3.48 r
+  DFF_65/d (dff_146)                       0.00       3.48 r
+  DFF_65/q_reg/D (DFFX1_RVT)               0.00 &     3.48 r
+  data arrival time                                   3.48
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.00       6.50
+  clock uncertainty                       -0.05       6.45
+  DFF_65/q_reg/CLK (DFFX1_RVT)             0.00       6.45 r
+  library setup time                      -0.06       6.39
+  data required time                                  6.39
+  -----------------------------------------------------------
+  data required time                                  6.39
+  data arrival time                                  -3.48
+  -----------------------------------------------------------
+  slack (MET)                                         2.92
+
+
+  Startpoint: g314 (input port clocked by ideal_clock1)
+  Endpoint: DFF_210/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g314 (in)                                0.00 @     2.40 f
+  U1589/Y (INVX0_RVT)                      0.04 @     2.44 r
+  U1585/Y (NAND3X0_RVT)                    0.13 &     2.56 f
+  U1584/Y (NAND2X0_RVT)                    0.18 &     2.75 r
+  U1125/Y (NAND3X0_RVT)                    0.11 &     2.85 f
+  U1060/Y (OA22X1_RVT)                     0.12 &     2.97 f
+  U1059/Y (OA21X1_RVT)                     0.12 &     3.09 f
+  U1577/Y (INVX0_RVT)                      0.07 &     3.16 r
+  U902/Y (NAND3X0_RVT)                     0.10 &     3.26 f
+  U1604/Y (INVX0_RVT)                      0.14 &     3.40 r
+  U878/Y (AO21X1_RVT)                      0.08 &     3.48 r
+  DFF_210/d (dff_1)                        0.00       3.48 r
+  DFF_210/q_reg/D (DFFX1_RVT)              0.00 &     3.48 r
+  data arrival time                                   3.48
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_210/q_reg/CLK (DFFX1_RVT)            0.00       6.46 r
+  library setup time                      -0.06       6.40
+  data required time                                  6.40
+  -----------------------------------------------------------
+  data required time                                  6.40
+  data arrival time                                  -3.48
+  -----------------------------------------------------------
+  slack (MET)                                         2.92
+
+
+  Startpoint: g314 (input port clocked by ideal_clock1)
+  Endpoint: DFF_12/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g314 (in)                                0.00 @     2.40 f
+  U1589/Y (INVX0_RVT)                      0.04 @     2.44 r
+  U1585/Y (NAND3X0_RVT)                    0.13 &     2.56 f
+  U1584/Y (NAND2X0_RVT)                    0.18 &     2.75 r
+  U1125/Y (NAND3X0_RVT)                    0.11 &     2.85 f
+  U1060/Y (OA22X1_RVT)                     0.12 &     2.97 f
+  U1059/Y (OA21X1_RVT)                     0.12 &     3.09 f
+  U1577/Y (INVX0_RVT)                      0.07 &     3.16 r
+  U902/Y (NAND3X0_RVT)                     0.10 &     3.26 f
+  U1604/Y (INVX0_RVT)                      0.14 &     3.40 r
+  U1076/Y (AO21X1_RVT)                     0.08 &     3.48 r
+  DFF_12/d (dff_199)                       0.00       3.48 r
+  DFF_12/q_reg/D (DFFX1_RVT)               0.00 &     3.48 r
+  data arrival time                                   3.48
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_12/q_reg/CLK (DFFX1_RVT)             0.00       6.46 r
+  library setup time                      -0.06       6.40
+  data required time                                  6.40
+  -----------------------------------------------------------
+  data required time                                  6.40
+  data arrival time                                  -3.48
+  -----------------------------------------------------------
+  slack (MET)                                         2.92
+
+
+  Startpoint: g314 (input port clocked by ideal_clock1)
+  Endpoint: DFF_150/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g314 (in)                                0.00 @     2.40 f
+  U1589/Y (INVX0_RVT)                      0.04 @     2.44 r
+  U1585/Y (NAND3X0_RVT)                    0.13 &     2.56 f
+  U1584/Y (NAND2X0_RVT)                    0.18 &     2.75 r
+  U1125/Y (NAND3X0_RVT)                    0.11 &     2.85 f
+  U1060/Y (OA22X1_RVT)                     0.12 &     2.97 f
+  U1059/Y (OA21X1_RVT)                     0.12 &     3.09 f
+  U1577/Y (INVX0_RVT)                      0.07 &     3.16 r
+  U902/Y (NAND3X0_RVT)                     0.10 &     3.26 f
+  U1604/Y (INVX0_RVT)                      0.14 &     3.40 r
+  U1088/Y (AO21X1_RVT)                     0.08 &     3.48 r
+  DFF_150/d (dff_61)                       0.00       3.48 r
+  DFF_150/q_reg/D (DFFX1_RVT)              0.00 &     3.48 r
+  data arrival time                                   3.48
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_150/q_reg/CLK (DFFX1_RVT)            0.00       6.46 r
+  library setup time                      -0.06       6.40
+  data required time                                  6.40
+  -----------------------------------------------------------
+  data required time                                  6.40
+  data arrival time                                  -3.48
+  -----------------------------------------------------------
+  slack (MET)                                         2.92
+
+
+  Startpoint: g314 (input port clocked by ideal_clock1)
+  Endpoint: DFF_155/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g314 (in)                                0.00 @     2.40 f
+  U1589/Y (INVX0_RVT)                      0.04 @     2.44 r
+  U1585/Y (NAND3X0_RVT)                    0.13 &     2.56 f
+  U1584/Y (NAND2X0_RVT)                    0.18 &     2.75 r
+  U1125/Y (NAND3X0_RVT)                    0.11 &     2.85 f
+  U1060/Y (OA22X1_RVT)                     0.12 &     2.97 f
+  U1059/Y (OA21X1_RVT)                     0.12 &     3.09 f
+  U1577/Y (INVX0_RVT)                      0.07 &     3.16 r
+  U902/Y (NAND3X0_RVT)                     0.10 &     3.26 f
+  U1604/Y (INVX0_RVT)                      0.14 &     3.40 r
+  U1092/Y (AO21X1_RVT)                     0.08 &     3.48 r
+  DFF_155/d (dff_56)                       0.00       3.48 r
+  DFF_155/q_reg/D (DFFX1_RVT)              0.00 &     3.48 r
+  data arrival time                                   3.48
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_155/q_reg/CLK (DFFX1_RVT)            0.00       6.46 r
+  library setup time                      -0.06       6.40
+  data required time                                  6.40
+  -----------------------------------------------------------
+  data required time                                  6.40
+  data arrival time                                  -3.48
+  -----------------------------------------------------------
+  slack (MET)                                         2.92
+
+
+  Startpoint: g102 (input port clocked by ideal_clock1)
+  Endpoint: DFF_184/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g102 (in)                                0.00 @     2.40 f
+  U1038/Y (INVX1_RVT)                      0.03 @     2.43 r
+  U1124/Y (NAND3X0_RVT)                    0.09 &     2.51 f
+  U893/Y (AND2X1_RVT)                      0.11 &     2.63 f
+  U1062/Y (AO22X1_RVT)                     0.11 &     2.74 f
+  U916/Y (OR3X2_RVT)                       0.10 &     2.84 f
+  U1183/Y (INVX1_RVT)                      0.03 &     2.87 r
+  U1182/Y (NAND2X0_RVT)                    0.06 &     2.93 f
+  U1123/Y (INVX1_RVT)                      0.04 &     2.98 r
+  U1122/Y (NAND3X0_RVT)                    0.07 &     3.05 f
+  U1190/Y (OAI22X1_RVT)                    0.12 &     3.17 r
+  U1188/Y (NAND2X0_RVT)                    0.05 &     3.22 f
+  U1218/Y (INVX1_RVT)                      0.04 &     3.27 r
+  U1216/Y (AO21X1_RVT)                     0.08 &     3.35 r
+  U1215/Y (AND3X1_RVT)                     0.08 &     3.42 r
+  DFF_184/d (dff_27)                       0.00       3.42 r
+  DFF_184/q_reg/D (DFFX1_RVT)              0.00 &     3.42 r
+  data arrival time                                   3.42
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.00       6.50
+  clock uncertainty                       -0.05       6.45
+  DFF_184/q_reg/CLK (DFFX1_RVT)            0.00       6.45 r
+  library setup time                      -0.06       6.39
+  data required time                                  6.39
+  -----------------------------------------------------------
+  data required time                                  6.39
+  data arrival time                                  -3.42
+  -----------------------------------------------------------
+  slack (MET)                                         2.97
+
+
+  Startpoint: g306 (input port clocked by ideal_clock1)
+  Endpoint: DFF_32/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g306 (in)                                0.00 @     2.40 f
+  U1052/Y (INVX1_RVT)                      0.01 @     2.41 r
+  U892/Y (AND2X1_RVT)                      0.07 &     2.48 r
+  U895/Y (NAND3X0_RVT)                     0.08 &     2.57 f
+  U877/Y (AOI21X1_RVT)                     0.17 &     2.74 r
+  U1431/Y (INVX0_RVT)                      0.10 &     2.84 f
+  U854/Y (NAND2X0_RVT)                     0.19 &     3.03 r
+  U1579/Y (INVX0_RVT)                      0.11 &     3.14 f
+  U1130/Y (OAI21X1_RVT)                    0.16 &     3.29 r
+  U1128/Y (AO21X1_RVT)                     0.08 &     3.37 r
+  U1599/Y (NAND2X0_RVT)                    0.04 &     3.42 f
+  DFF_32/d (dff_179)                       0.00       3.42 f
+  DFF_32/q_reg/D (DFFX1_RVT)               0.00 &     3.42 f
+  data arrival time                                   3.42
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_32/q_reg/CLK (DFFX1_RVT)             0.00       6.46 r
+  library setup time                      -0.07       6.39
+  data required time                                  6.39
+  -----------------------------------------------------------
+  data required time                                  6.39
+  data arrival time                                  -3.42
+  -----------------------------------------------------------
+  slack (MET)                                         2.97
+
+
+  Startpoint: g306 (input port clocked by ideal_clock1)
+  Endpoint: DFF_198/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g306 (in)                                0.00 @     2.40 f
+  U1052/Y (INVX1_RVT)                      0.01 @     2.41 r
+  U892/Y (AND2X1_RVT)                      0.07 &     2.48 r
+  U895/Y (NAND3X0_RVT)                     0.08 &     2.57 f
+  U877/Y (AOI21X1_RVT)                     0.17 &     2.74 r
+  U1431/Y (INVX0_RVT)                      0.10 &     2.84 f
+  U854/Y (NAND2X0_RVT)                     0.19 &     3.03 r
+  U1579/Y (INVX0_RVT)                      0.11 &     3.14 f
+  U1198/Y (OAI21X1_RVT)                    0.16 &     3.30 r
+  U1196/Y (AO21X1_RVT)                     0.07 &     3.37 r
+  U1195/Y (NAND2X0_RVT)                    0.04 &     3.41 f
+  DFF_198/d (dff_13)                       0.00       3.41 f
+  DFF_198/q_reg/D (DFFX1_RVT)              0.00 &     3.41 f
+  data arrival time                                   3.41
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_198/q_reg/CLK (DFFX1_RVT)            0.00       6.46 r
+  library setup time                      -0.07       6.39
+  data required time                                  6.39
+  -----------------------------------------------------------
+  data required time                                  6.39
+  data arrival time                                  -3.41
+  -----------------------------------------------------------
+  slack (MET)                                         2.98
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: DFF_79/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g41 (in)                                 0.00 @     2.40 f
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 f
+  U1173/Y (AND4X1_RVT)                     0.12 &     2.60 f
+  U1695/Y (NAND3X0_RVT)                    0.07 &     2.67 r
+  U1690/Y (NAND3X0_RVT)                    0.26 &     2.93 f
+  U911/Y (INVX1_RVT)                       0.09 &     3.02 r
+  U1705/Y (NAND4X0_RVT)                    0.11 &     3.13 f
+  U1684/Y (OR3X1_RVT)                      0.11 &     3.24 f
+  U1162/Y (NAND4X0_RVT)                    0.10 &     3.34 r
+  DFF_79/d (dff_132)                       0.00       3.34 r
+  DFF_79/q_reg/D (DFFX1_RVT)               0.00 &     3.34 r
+  data arrival time                                   3.34
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_79/q_reg/CLK (DFFX1_RVT)             0.00       6.46 r
+  library setup time                      -0.08       6.38
+  data required time                                  6.38
+  -----------------------------------------------------------
+  data required time                                  6.38
+  data arrival time                                  -3.34
+  -----------------------------------------------------------
+  slack (MET)                                         3.03
+
+
+  Startpoint: g41 (input port clocked by ideal_clock1)
+  Endpoint: DFF_187/q_reg
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (ideal)              0.40       0.40
+  input external delay                     2.00       2.40 f
+  g41 (in)                                 0.00 @     2.40 f
+  U1603/Y (OA21X1_RVT)                     0.08 @     2.48 f
+  U1173/Y (AND4X1_RVT)                     0.12 &     2.60 f
+  U1695/Y (NAND3X0_RVT)                    0.07 &     2.67 r
+  U1690/Y (NAND3X0_RVT)                    0.26 &     2.93 f
+  U911/Y (INVX1_RVT)                       0.09 &     3.02 r
+  U1705/Y (NAND4X0_RVT)                    0.11 &     3.13 f
+  U1684/Y (OR3X1_RVT)                      0.11 &     3.24 f
+  U1170/Y (NAND4X0_RVT)                    0.09 &     3.34 r
+  DFF_187/d (dff_24)                       0.00       3.34 r
+  DFF_187/q_reg/D (DFFX1_RVT)              0.00 &     3.34 r
+  data arrival time                                   3.34
+
+  clock ideal_clock1 (rise edge)           6.50       6.50
+  clock network delay (propagated)         0.01       6.51
+  clock uncertainty                       -0.05       6.46
+  DFF_187/q_reg/CLK (DFFX1_RVT)            0.00       6.46 r
+  library setup time                      -0.08       6.38
+  data required time                                  6.38
+  -----------------------------------------------------------
+  data required time                                  6.38
+  data arrival time                                  -3.34
+  -----------------------------------------------------------
+  slack (MET)                                         3.04
+
+
+1

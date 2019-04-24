@@ -1,0 +1,153 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-input_pins
+	-nets
+	-max_paths 1
+	-transition_time
+	-capacitance
+	-sort_by slack
+Design : fpu
+Version: L-2016.06-SP3-1
+Date   : Mon Apr 15 23:31:36 2019
+****************************************
+
+Warning: There are 2219 invalid end points for constrained paths. (UITE-416)
+
+  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[2]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[17]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                       Fanout    Cap      Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                  0.10       0.00       0.00
+  clock network delay (ideal)                                0.40       0.40
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[2]/CLK (SDFFX1_RVT)
+                                                  0.10       0.00       0.40 r
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[2]/Q (SDFFX1_RVT)
+                                                  0.03       0.19       0.59 f
+  fpu_mul/i_m4stg_frac/ffrs1/q[2] (net)
+                                 2     0.94 
+  fpu_mul/i_m4stg_frac/U131/A (IBUFFX2_RVT)       0.03       0.44       1.03 f
+  fpu_mul/i_m4stg_frac/U131/Y (IBUFFX2_RVT)       0.04       0.09       1.12 r
+  fpu_mul/i_m4stg_frac/n49 (net)
+                                 7     6.29 
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/U19/A (IBUFFX2_RVT)
+                                                  0.04      15.80      16.92 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/U19/Y (IBUFFX2_RVT)
+                                                  0.02       0.07      16.99 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/n6 (net)
+                                 1     0.68 
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/U20/A (INVX1_RVT)
+                                                  0.02       0.02      17.00 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/U20/Y (INVX1_RVT)
+                                                  0.03       0.03      17.03 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/n7 (net)
+                                 3     2.47 
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/U1/A (INVX0_RVT)
+                                                  0.03       0.22      17.25 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/U1/Y (INVX0_RVT)
+                                                  0.02       0.03      17.28 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/n1 (net)
+                                 1     0.92 
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/U2/A (INVX1_RVT)
+                                                  0.02       0.02      17.30 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/U2/Y (INVX1_RVT)
+                                                  0.02       0.03      17.33 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/n2 (net)
+                                 1     1.48 
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/p1/U2/A2 (XOR2X2_RVT)
+                                                  0.02       0.03      17.35 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/p1/U2/Y (XOR2X2_RVT)
+                                                  0.04       0.11      17.46 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/p1/n5 (net)
+                                 1     0.68 
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/p1/U5/A1 (NAND2X0_RVT)
+                                                  0.04       0.01      17.47 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/p1/U5/Y (NAND2X0_RVT)
+                                                  0.05       0.05      17.52 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/p1/p_l (net)
+                                 2     1.03 
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/p1/U1/A1 (OAI22X2_RVT)
+                                                  0.05       0.06      17.58 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/p1/U1/Y (OAI22X2_RVT)
+                                                  0.03       0.11      17.69 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/p1/z (net)
+                                 2     2.13 
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/sc1/U1/A1 (XOR2X2_RVT)
+                                                  0.03       0.09      17.78 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/sc1/U1/Y (XOR2X2_RVT)
+                                                  0.04       0.10      17.89 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/sc1/n2 (net)
+                                 2     2.29 
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/sc1/U2/A2 (XOR2X2_RVT)
+                                                  0.04       0.10      17.98 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/sc1/U2/Y (XOR2X2_RVT)
+                                                  0.04       0.12      18.10 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/sc1/sum (net)
+                                 2     1.61 
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_2_17_/U1/A1 (XOR2X2_RVT)
+                                                  0.04       0.08      18.18 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_2_17_/U1/Y (XOR2X2_RVT)
+                                                  0.04       0.11      18.29 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_2_17_/n2 (net)
+                                 2     2.22 
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_2_17_/U2/A1 (XOR2X2_RVT)
+                                                  0.04       0.09      18.38 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_2_17_/U2/Y (XOR2X2_RVT)
+                                                  0.04       0.11      18.49 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_2_17_/sum (net)
+                                 1     1.16 
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U4/A1 (XOR2X2_RVT)
+                                                  0.04       0.02      18.51 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U4/Y (XOR2X2_RVT)
+                                                  0.04       0.11      18.62 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/n6 (net)
+                                 2     1.52 
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U2/A (INVX0_RVT)
+                                                  0.04       0.06      18.68 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U2/Y (INVX0_RVT)
+                                                  0.04       0.04      18.72 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/n2 (net)
+                                 2     2.19 
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U3/A3 (XNOR3X2_RVT)
+                                                  0.04       0.09      18.81 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U3/Y (XNOR3X2_RVT)
+                                                  0.07       0.08      18.90 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/n5 (net)
+                                 2     1.50 
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U1/A (INVX0_RVT)
+                                                  0.07       0.06      18.96 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U1/Y (INVX0_RVT)
+                                                  0.05       0.06      19.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/n1 (net)
+                                 2     1.95 
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U5/A2 (XNOR2X1_RVT)
+                                                  0.05       0.08      19.11 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U5/Y (XNOR2X1_RVT)
+                                                  0.03       0.13      19.24 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/sum (net)
+                                 1     0.44 
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[17]/D (SDFFX1_RVT)
+                                                  0.03       0.09      19.32 r
+  data arrival time                                                    19.32
+
+  clock ideal_clock1 (rise edge)                  0.10      10.00      10.00
+  clock network delay (ideal)                                0.40      10.40
+  clock reconvergence pessimism                              0.00      10.40
+  clock uncertainty                                         -0.05      10.35
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[17]/CLK (SDFFX1_RVT)            10.35 r
+  library setup time                                        -0.12      10.23
+  data required time                                                   10.23
+  -----------------------------------------------------------------------------
+  data required time                                                   10.23
+  data arrival time                                                   -19.32
+  -----------------------------------------------------------------------------
+  slack (VIOLATED)                                                     -9.09
+
+
+1

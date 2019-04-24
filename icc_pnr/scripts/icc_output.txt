@@ -1,0 +1,334 @@
+Initializing gui preferences from file  /home/ks3379@drexel.edu/.synopsys_icc_prefs.tcl
+icc_shell> start_gui
+Information: Visibility is turned ON for cells and cell contents because the task is set to Block Implementation (GUI-026)
+icc_shell> source init_design_icc.tcl
+Error: Library 'fpu.mw' already exists. (MWUI-004)
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db'
+Information: Using CCS timing libraries. (TIM-024)
+Warning: Unit conflict found: Milkyway technology file resistance unit is kOhm; main library resistance unit is MOhm. (IFS-007)
+Loading db file '/opt/synopsys/2016/icc/libraries/syn/gtech.db'
+Loading db file '/opt/synopsys/2016/icc/libraries/syn/standard.sldb'
+Information: linking reference library : /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/milkyway/saed32nm_rvt_1p9m. (PSYN-878)
+  Loading link library 'saed32rvt_ss0p95v25c'
+  Loading link library 'gtech'
+Reading ddc file '/home/ks3379@drexel.edu/ecec574/OpenSPARC/dc_synth/output/fpu.ddc'.
+Loaded 3572 designs.
+Loading db file '/mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/sram/db_ccs/saed32sram_ss0p95v25c.db'
+Current design is 'fpu'.
+Current design is 'fpu'.
+
+  Linking design 'fpu'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3572 designs)            /home/ks3379@drexel.edu/ecec574/OpenSPARC/dc_synth/output/fpu.ddc, etc
+  saed32rvt_ss0p95v25c (library) /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
+  saed32sram_ss0p95v25c (library) /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/sram/db_ccs/saed32sram_ss0p95v25c.db
+
+Info: Creating auto CEL.
+Preparing data for query................... 
+Information: Performing CEL netlist consistency check. (MWDC-118)
+Information: CEL consistency check PASSED. (MWDC-119)
+Information: Saved design named fpu. (UIG-5)
+Preparing data for query................... 
+Error: File '/mnt/class_data/mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/tech/star_rcxt/saed32nm_1p9m_nominal.tluplus' does not exist or it is unreadable. (RCEX-070)
+Warning: Unit conflict found: Milkyway technology file resistance unit is kOhm; main library resistance unit is MOhm. (IFS-007)
+Type of creating bus for undefined cells : 0
+Warning: /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/milkyway/saed32nm_rvt_1p9m: bus naming style _<%d> is not consistent with main lib. (MWNL-111)
+
+*****  Verilog HDL translation! *****
+
+*****    Start Pass 1 *****
+
+*****  Pass 1 Complete *****
+Elapsed =    0:00:02, CPU =    0:00:02
+
+*****  Verilog HDL translation! *****
+
+*****    Start Pass 2 *****
+
+*****  Pass 2 Complete *****
+
+*****   Verilog HDL translation completed! *****
+Elapsed =    0:00:04, CPU =    0:00:03
+Hierarchy Preservation is turned ON
+The quick-attach skip-search mode has been turned on.
+  Start axu naming escaping style change ...
+INFO: net in module dff_s_SIZE1_3 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_4 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_5 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_1 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffrl_async_SIZE1_1 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_1 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffr_s_SIZE1_1 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_6 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_7 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_2 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_3 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_4 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_5 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_6 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_7 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_8 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_9 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_10 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_11 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_12 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_2 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_3 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_4 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_5 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_13 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_14 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_15 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_6 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_8 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_7 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffr_s_SIZE1_2 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_16 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffr_s_SIZE1_3 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_9 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_10 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_11 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_12 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_13 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_14 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_15 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_16 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_17 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_18 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_19 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_20 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_21 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_22 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_23 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_24 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_25 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_26 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_27 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_28 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_17 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_18 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_19 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_20 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_21 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_22 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_23 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_24 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_25 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_26 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_27 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_28 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_29 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_30 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffrl_async_SIZE1_2 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_29 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_1 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module mul_bodec_1 renamed from \b[15] to b[15]1 because of name conflict
+INFO: net in module mul_bodec_1 renamed from \b[13] to b[13]1 because of name conflict
+INFO: net in module mul_bodec_1 renamed from \b[11] to b[11]1 because of name conflict
+INFO: net in module mul_bodec_1 renamed from \b[9] to b[9]1 because of name conflict
+INFO: net in module mul_bodec_1 renamed from \b[7] to b[7]1 because of name conflict
+INFO: net in module mul_bodec_1 renamed from \b[5] to b[5]1 because of name conflict
+INFO: net in module mul_bodec_1 renamed from \b[3] to b[3]1 because of name conflict
+INFO: net in module mul_bodec_1 renamed from \b[1] to b[1]1 because of name conflict
+INFO: net in module mul_bodec_2 renamed from \b[15] to b[15]1 because of name conflict
+INFO: net in module mul_bodec_2 renamed from \b[13] to b[13]1 because of name conflict
+INFO: net in module mul_bodec_2 renamed from \b[11] to b[11]1 because of name conflict
+INFO: net in module mul_bodec_2 renamed from \b[9] to b[9]1 because of name conflict
+INFO: net in module mul_bodec_2 renamed from \b[7] to b[7]1 because of name conflict
+INFO: net in module mul_bodec_2 renamed from \b[5] to b[5]1 because of name conflict
+INFO: net in module mul_bodec_2 renamed from \b[3] to b[3]1 because of name conflict
+INFO: net in module mul_bodec_2 renamed from \b[1] to b[1]1 because of name conflict
+INFO: net in module dff_s_SIZE1_2 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module mul_bodec_3 renamed from \b[15] to b[15]1 because of name conflict
+INFO: net in module mul_bodec_3 renamed from \b[13] to b[13]1 because of name conflict
+INFO: net in module mul_bodec_3 renamed from \b[11] to b[11]1 because of name conflict
+INFO: net in module mul_bodec_3 renamed from \b[9] to b[9]1 because of name conflict
+INFO: net in module mul_bodec_3 renamed from \b[7] to b[7]1 because of name conflict
+INFO: net in module mul_bodec_3 renamed from \b[5] to b[5]1 because of name conflict
+INFO: net in module mul_bodec_3 renamed from \b[3] to b[3]1 because of name conflict
+INFO: net in module mul_bodec_3 renamed from \b[1] to b[1]1 because of name conflict
+INFO: net in module mul_bodec_0 renamed from \b[15] to b[15]1 because of name conflict
+INFO: net in module mul_bodec_0 renamed from \b[13] to b[13]1 because of name conflict
+INFO: net in module mul_bodec_0 renamed from \b[11] to b[11]1 because of name conflict
+INFO: net in module mul_bodec_0 renamed from \b[9] to b[9]1 because of name conflict
+INFO: net in module mul_bodec_0 renamed from \b[7] to b[7]1 because of name conflict
+INFO: net in module mul_bodec_0 renamed from \b[5] to b[5]1 because of name conflict
+INFO: net in module mul_bodec_0 renamed from \b[3] to b[3]1 because of name conflict
+INFO: net in module mul_bodec_0 renamed from \b[1] to b[1]1 because of name conflict
+INFO: net in module dffr_s_SIZE1_4 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffr_s_SIZE1_5 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffr_s_SIZE1_6 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffr_s_SIZE1_7 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffr_s_SIZE1_8 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffr_s_SIZE1_9 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_31 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_32 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_33 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_34 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_35 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_36 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_37 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_38 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_39 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_40 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_41 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_42 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_43 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_44 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_45 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_46 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_47 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_48 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_49 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_50 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_51 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_52 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_53 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_54 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_55 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_56 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_57 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_58 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_59 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_8 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_9 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_60 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_61 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_62 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_30 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_63 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_64 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_65 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_66 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_67 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_68 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_69 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_70 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_71 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_72 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_73 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_74 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_75 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_76 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_77 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_78 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_79 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_80 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_81 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_82 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_83 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_84 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_85 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_86 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_87 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffrl_async_SIZE1_3 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module fpu_add_exp_dp_DW01_add_3 renamed from \SUM[11] to SUM[11]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_88 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_89 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_90 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_91 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_92 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_93 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_94 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_95 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_96 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_97 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_98 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_99 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_100 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_101 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_102 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_103 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_104 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_105 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_106 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_107 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_108 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_109 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_110 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_111 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_112 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_113 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_114 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_115 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_116 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_117 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_118 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_119 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_120 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_121 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_122 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_123 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_124 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_125 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_126 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_10 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_127 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_128 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_129 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_130 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_131 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_132 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_133 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_134 renamed from \so[0] to so[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_135 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_136 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_137 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_138 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_139 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_140 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_141 renamed from \so[0] to so[0]1 because of name conflict
+INFO: net in module dffe_s_SIZE1_0 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffrl_async_SIZE1_4 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_11 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_12 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_13 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_14 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffre_s_SIZE1_0 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_31 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dff_s_SIZE1_0 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffr_s_SIZE1_0 renamed from \q[0] to q[0]1 because of name conflict
+INFO: net in module dffrl_async_SIZE1_0 renamed from \q[0] to q[0]1 because of name conflict
+  End axu naming escaping style change, status is 1
+Checking single pin net for cell 'fpu.CEL' now...
+Total number of cell instances: 39642
+Total number of nets: 40199
+Total number of ports: 290 (include 0 PG ports)
+Total number of hierarchical cell instances: 3572
+
+The quick-attach skip-search mode has been turned off.
+INFO:  total find 0 pg nets connected with tie net.
+Elapsed =    0:00:02, CPU =    0:00:02
+Preparing data for query................... 
+Information: Read verilog completed successfully.
+Information: linking reference library : /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/milkyway/saed32nm_rvt_1p9m. (PSYN-878)
+Information: Loading local_link_library attribute {/mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db, /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/sram/db_ccs/saed32sram_ss0p95v25c.db}. (MWDC-290)
+
+  Linking design 'fpu'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (3572 designs)            fpu.CEL, etc
+  saed32rvt_ss0p95v25c (library) /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
+  saed32sram_ss0p95v25c (library) /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/sram/db_ccs/saed32sram_ss0p95v25c.db
+
+ Info: hierarchy_separator was changed to /
+
+Reading SDC version 2.0...
+ Info: hierarchy_separator was changed to /
+Information: Performing CEL netlist consistency check. (MWDC-118)
+Information: CEL consistency check PASSED. (MWDC-119)
+Information: Saved design named fpu_initial. (UIG-5)
+1
+icc_shell> source init_design_icc.tcl > init_design_icc.logType of creating bus for undefined cells : 0
+
+icc_shell> exit
+
+
+    while executing
+"get_app_var gui_suppress_auto_layout"
+    (procedure "iccGUI::on_current_design_changed_cb" line 10)
+    invoked from within
+"iccGUI::on_current_design_changed_cb physical {fpu.CEL;3} {{}} øhange ame"
+Error: Tcl Callback 'on_layout_activate_callback LayoutWindow LayoutWindow.3' failed
+Error: Tcl Callback 'on_layout_activate_callback LayoutWindow LayoutWindow.2' failed

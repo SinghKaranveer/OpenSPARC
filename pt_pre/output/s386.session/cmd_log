@@ -1,0 +1,18 @@
+source /opt/synopsys/2016/primetime/admin/setup/.synopsys_pt.setup
+###### Pre-Layout PrimeTime Script ######
+## Define the library location
+set link_library [ list /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v125c.db /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95vn40c.db]
+set target_library [ list /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db ]
+set link_path "* /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db" 
+## read the verilog files
+read_verilog /home/ks3379@drexel.edu/ecec574/src_assignment/dc_synth/output/s386.v 
+#../dc_synth/output/s386.v
+set link_create_black_boxes false
+link_design
+read_ddc -netlist_only ../dc_synth/output/s386.ddc
+## Set top module name
+current_design s386
+## Read in SDC from the synthesis
+source ../dc_synth/const/s386.sdc
+## Analysis reports
+## Save outputs

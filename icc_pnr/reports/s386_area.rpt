@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : s386
+Version: L-2016.03-SP5-1
+Date   : Sun Mar 10 15:00:54 2019
+****************************************
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v25c (File: /mnt/class_data/ecec574-w2019/PDKs/SAED32nm/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db)
+
+Number of ports:                           19
+Number of nets:                            89
+Number of cells:                           79
+Number of combinational cells:             73
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         17
+Number of references:                      23
+
+Combinational area:                139.779201
+Buf/Inv area:                       21.602240
+Noncombinational area:              39.646465
+Macro/Black Box area:                0.000000
+Net Interconnect area:              19.165017
+
+Total cell area:                   179.425666
+Total area:                        198.590684
+1
