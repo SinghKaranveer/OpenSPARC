@@ -2,7 +2,7 @@
 ### Floorplanning
 ###########################################################################
 
-create_floorplan -core_utilization 0.6 -left_io2core 5 -bottom_io2core 5 -right_io2core 5 -top_io2core 5
+create_floorplan -core_utilization 0.9 -left_io2core 5 -bottom_io2core 5 -right_io2core 5 -top_io2core 5
 derive_pg_connection -power_net VDDA -ground_net VSS
 derive_pg_connection -power_net VDDA -ground_net VSS -tie
 

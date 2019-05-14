@@ -1,334 +1,330 @@
 Initializing gui preferences from file  /home/ks3379@drexel.edu/.synopsys_icc_prefs.tcl
-icc_shell> start_gui
-Information: Visibility is turned ON for cells and cell contents because the task is set to Block Implementation (GUI-026)
-icc_shell> source init_design_icc.tcl
-Error: Library 'fpu.mw' already exists. (MWUI-004)
-Loading db file '/mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db'
-Information: Using CCS timing libraries. (TIM-024)
-Warning: Unit conflict found: Milkyway technology file resistance unit is kOhm; main library resistance unit is MOhm. (IFS-007)
-Loading db file '/opt/synopsys/2016/icc/libraries/syn/gtech.db'
-Loading db file '/opt/synopsys/2016/icc/libraries/syn/standard.sldb'
-Information: linking reference library : /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/milkyway/saed32nm_rvt_1p9m. (PSYN-878)
-  Loading link library 'saed32rvt_ss0p95v25c'
-  Loading link library 'gtech'
-Reading ddc file '/home/ks3379@drexel.edu/ecec574/OpenSPARC/dc_synth/output/fpu.ddc'.
-Loaded 3572 designs.
-Loading db file '/mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/sram/db_ccs/saed32sram_ss0p95v25c.db'
-Current design is 'fpu'.
-Current design is 'fpu'.
+icc_shell> 
+icc_shell> 
+icc_shell> man route_opt
+2.  Synopsys Commands                                        Command Reference
+                                   route_opt
 
-  Linking design 'fpu'
-  Using the following designs and libraries:
-  --------------------------------------------------------------------------
-  * (3572 designs)            /home/ks3379@drexel.edu/ecec574/OpenSPARC/dc_synth/output/fpu.ddc, etc
-  saed32rvt_ss0p95v25c (library) /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
-  saed32sram_ss0p95v25c (library) /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/sram/db_ccs/saed32sram_ss0p95v25c.db
+NAME
+       route_opt
+              Performs  simultaneous routing and postroute optimization on the
+              design.
 
-Info: Creating auto CEL.
-Preparing data for query................... 
-Information: Performing CEL netlist consistency check. (MWDC-118)
-Information: CEL consistency check PASSED. (MWDC-119)
-Information: Saved design named fpu. (UIG-5)
-Preparing data for query................... 
-Error: File '/mnt/class_data/mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/tech/star_rcxt/saed32nm_1p9m_nominal.tluplus' does not exist or it is unreadable. (RCEX-070)
-Warning: Unit conflict found: Milkyway technology file resistance unit is kOhm; main library resistance unit is MOhm. (IFS-007)
-Type of creating bus for undefined cells : 0
-Warning: /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/milkyway/saed32nm_rvt_1p9m: bus naming style _<%d> is not consistent with main lib. (MWNL-111)
+SYNTAX
+       status route_opt
+               [-stage global | track | detail]
+               [-xtalk_reduction]
+               [-only_xtalk_reduction]
+               [-power]
+               [-size_only]
+               [-area_recovery]
+               [-wire_size]
+               [-effort low | medium | high]
+               [-initial_route_only
+                | -skip_initial_route
+                | -incremental]
+               [-only_wire_size]
+               [-only_hold_time]
+               [-only_design_rule]
+               [-only_power_recovery]
+               [-only_area_recovery]
+               [-register_to_register]
+               [-concurrent_clock_and_data]
+               [-only_concurrent_clock_and_data]
+               [-optimize_wire_via]
+               [-num_cpus count]
 
-*****  Verilog HDL translation! *****
+   Data Types
+       count     integer
 
-*****    Start Pass 1 *****
+ARGUMENTS
+       -stage global | track | detail
+              Specifies the routing stages to  run  before  running  topology-
+              based optimization.
 
-*****  Pass 1 Complete *****
-Elapsed =    0:00:02, CPU =    0:00:02
+              If you do not specify this option, the tool runs global routing,
+              track assignment, and detail routing  before  running  optimiza-
+              tion.
 
-*****  Verilog HDL translation! *****
+              If  you specify -stage global, the tool runs only global routing
+              before running optimization.
 
-*****    Start Pass 2 *****
+              If you specify -stage track, the tool runs  global  routing  and
+              track assignment before running optimization.
 
-*****  Pass 2 Complete *****
+              IF  you specify -stage detail, the tool runs only detail routing
+              before running optimization. The  design  must  already  contain
+              global route and track assignment information.
 
-*****   Verilog HDL translation completed! *****
-Elapsed =    0:00:04, CPU =    0:00:03
-Hierarchy Preservation is turned ON
-The quick-attach skip-search mode has been turned on.
-  Start axu naming escaping style change ...
-INFO: net in module dff_s_SIZE1_3 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_4 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_5 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_1 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffrl_async_SIZE1_1 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_1 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffr_s_SIZE1_1 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_6 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_7 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_2 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_3 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_4 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_5 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_6 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_7 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_8 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_9 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_10 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_11 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_12 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_2 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_3 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_4 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_5 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_13 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_14 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_15 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_6 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_8 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_7 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffr_s_SIZE1_2 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_16 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffr_s_SIZE1_3 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_9 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_10 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_11 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_12 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_13 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_14 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_15 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_16 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_17 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_18 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_19 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_20 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_21 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_22 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_23 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_24 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_25 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_26 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_27 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_28 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_17 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_18 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_19 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_20 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_21 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_22 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_23 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_24 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_25 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_26 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_27 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_28 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_29 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_30 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffrl_async_SIZE1_2 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_29 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_1 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module mul_bodec_1 renamed from \b[15] to b[15]1 because of name conflict
-INFO: net in module mul_bodec_1 renamed from \b[13] to b[13]1 because of name conflict
-INFO: net in module mul_bodec_1 renamed from \b[11] to b[11]1 because of name conflict
-INFO: net in module mul_bodec_1 renamed from \b[9] to b[9]1 because of name conflict
-INFO: net in module mul_bodec_1 renamed from \b[7] to b[7]1 because of name conflict
-INFO: net in module mul_bodec_1 renamed from \b[5] to b[5]1 because of name conflict
-INFO: net in module mul_bodec_1 renamed from \b[3] to b[3]1 because of name conflict
-INFO: net in module mul_bodec_1 renamed from \b[1] to b[1]1 because of name conflict
-INFO: net in module mul_bodec_2 renamed from \b[15] to b[15]1 because of name conflict
-INFO: net in module mul_bodec_2 renamed from \b[13] to b[13]1 because of name conflict
-INFO: net in module mul_bodec_2 renamed from \b[11] to b[11]1 because of name conflict
-INFO: net in module mul_bodec_2 renamed from \b[9] to b[9]1 because of name conflict
-INFO: net in module mul_bodec_2 renamed from \b[7] to b[7]1 because of name conflict
-INFO: net in module mul_bodec_2 renamed from \b[5] to b[5]1 because of name conflict
-INFO: net in module mul_bodec_2 renamed from \b[3] to b[3]1 because of name conflict
-INFO: net in module mul_bodec_2 renamed from \b[1] to b[1]1 because of name conflict
-INFO: net in module dff_s_SIZE1_2 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module mul_bodec_3 renamed from \b[15] to b[15]1 because of name conflict
-INFO: net in module mul_bodec_3 renamed from \b[13] to b[13]1 because of name conflict
-INFO: net in module mul_bodec_3 renamed from \b[11] to b[11]1 because of name conflict
-INFO: net in module mul_bodec_3 renamed from \b[9] to b[9]1 because of name conflict
-INFO: net in module mul_bodec_3 renamed from \b[7] to b[7]1 because of name conflict
-INFO: net in module mul_bodec_3 renamed from \b[5] to b[5]1 because of name conflict
-INFO: net in module mul_bodec_3 renamed from \b[3] to b[3]1 because of name conflict
-INFO: net in module mul_bodec_3 renamed from \b[1] to b[1]1 because of name conflict
-INFO: net in module mul_bodec_0 renamed from \b[15] to b[15]1 because of name conflict
-INFO: net in module mul_bodec_0 renamed from \b[13] to b[13]1 because of name conflict
-INFO: net in module mul_bodec_0 renamed from \b[11] to b[11]1 because of name conflict
-INFO: net in module mul_bodec_0 renamed from \b[9] to b[9]1 because of name conflict
-INFO: net in module mul_bodec_0 renamed from \b[7] to b[7]1 because of name conflict
-INFO: net in module mul_bodec_0 renamed from \b[5] to b[5]1 because of name conflict
-INFO: net in module mul_bodec_0 renamed from \b[3] to b[3]1 because of name conflict
-INFO: net in module mul_bodec_0 renamed from \b[1] to b[1]1 because of name conflict
-INFO: net in module dffr_s_SIZE1_4 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffr_s_SIZE1_5 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffr_s_SIZE1_6 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffr_s_SIZE1_7 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffr_s_SIZE1_8 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffr_s_SIZE1_9 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_31 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_32 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_33 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_34 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_35 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_36 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_37 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_38 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_39 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_40 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_41 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_42 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_43 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_44 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_45 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_46 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_47 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_48 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_49 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_50 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_51 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_52 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_53 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_54 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_55 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_56 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_57 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_58 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_59 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_8 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_9 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_60 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_61 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_62 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_30 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_63 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_64 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_65 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_66 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_67 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_68 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_69 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_70 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_71 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_72 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_73 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_74 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_75 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_76 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_77 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_78 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_79 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_80 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_81 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_82 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_83 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_84 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_85 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_86 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_87 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffrl_async_SIZE1_3 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module fpu_add_exp_dp_DW01_add_3 renamed from \SUM[11] to SUM[11]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_88 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_89 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_90 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_91 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_92 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_93 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_94 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_95 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_96 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_97 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_98 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_99 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_100 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_101 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_102 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_103 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_104 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_105 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_106 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_107 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_108 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_109 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_110 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_111 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_112 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_113 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_114 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_115 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_116 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_117 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_118 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_119 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_120 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_121 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_122 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_123 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_124 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_125 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_126 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_10 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_127 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_128 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_129 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_130 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_131 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_132 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_133 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_134 renamed from \so[0] to so[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_135 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_136 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_137 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_138 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_139 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_140 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_141 renamed from \so[0] to so[0]1 because of name conflict
-INFO: net in module dffe_s_SIZE1_0 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffrl_async_SIZE1_4 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_11 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_12 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_13 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_14 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffre_s_SIZE1_0 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_31 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dff_s_SIZE1_0 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffr_s_SIZE1_0 renamed from \q[0] to q[0]1 because of name conflict
-INFO: net in module dffrl_async_SIZE1_0 renamed from \q[0] to q[0]1 because of name conflict
-  End axu naming escaping style change, status is 1
-Checking single pin net for cell 'fpu.CEL' now...
-Total number of cell instances: 39642
-Total number of nets: 40199
-Total number of ports: 290 (include 0 PG ports)
-Total number of hierarchical cell instances: 3572
+              If  you  specify -stage global or -stage track when block inter-
+              face optimization is enabled, the tool issues a warning  message
+              and ignores block interface optimization. To use block interface
+              optimization,  either  remove  this  option  or  specify  -stage
+              detail.
 
-The quick-attach skip-search mode has been turned off.
-INFO:  total find 0 pg nets connected with tie net.
-Elapsed =    0:00:02, CPU =    0:00:02
-Preparing data for query................... 
-Information: Read verilog completed successfully.
-Information: linking reference library : /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/milkyway/saed32nm_rvt_1p9m. (PSYN-878)
-Information: Loading local_link_library attribute {/mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db, /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/sram/db_ccs/saed32sram_ss0p95v25c.db}. (MWDC-290)
+       -xtalk_reduction
+              Runs  routing-based  crosstalk  reduction  signal integrity (SI)
+              optimization.
 
-  Linking design 'fpu'
-  Using the following designs and libraries:
-  --------------------------------------------------------------------------
-  * (3572 designs)            fpu.CEL, etc
-  saed32rvt_ss0p95v25c (library) /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/stdcell_rvt/db_ccs/saed32rvt_ss0p95v25c.db
-  saed32sram_ss0p95v25c (library) /mnt/class_data/ecec574-w2019/PDKs/SAED32nm_new/SAED32_EDK/lib/sram/db_ccs/saed32sram_ss0p95v25c.db
+              This option is applicable only if you  enable  signal  integrity
+              mode  before  running  the  route_opt command. You enable signal
+              integrity mode by setting the -route_xtalk_prevention option  of
+              the  set_si_options  command to true. By default, this option is
+              set to false. If you specify the -xtalk_reduction option without
+              enabling signal integrity mode, the tool issues an error message
+              and stops. If you specify this  option  and  also  enable  block
+              interface optimization, the tool honors the option only for top-
+              level nets.
 
- Info: hierarchy_separator was changed to /
+       -only_xtalk_reduction
+              Runs only routing-based crosstalk reduction.
 
-Reading SDC version 2.0...
- Info: hierarchy_separator was changed to /
-Information: Performing CEL netlist consistency check. (MWDC-118)
-Information: CEL consistency check PASSED. (MWDC-119)
-Information: Saved design named fpu_initial. (UIG-5)
-1
-icc_shell> source init_design_icc.tcl > init_design_icc.logType of creating bus for undefined cells : 0
+              Similar to the -xtalk_reduction option, this option is  applica-
+              ble  only  if  you  enable  signal  integrity  mode  running the
+              route_opt command. If you specify this option  without  enabling
+              signal  integrity  mode or if you specify any other options with
+              the -only_xtalk_reduction option, the tool issues an error  mes-
+              sage and stops. If you specify this option and also enable block
+              interface optimization, the tool will honor the option only  for
+              top-level nets.
 
+       -power
+              Enables topology-based leakage-power optimization.
+
+              The  route_opt  command  can  perform leakage-power optimization
+              based on either the multiple-threshold-voltage constraint or the
+              leakage  values  of  the library cells. To perform leakage-power
+              optimization based on the multiple-threshold-voltage constraint,
+              use  the  set_multi_vth_constraint  command  to define this con-
+              straint before running the  route_opt  command.   If  this  con-
+              straint  is  not defined, the tool bases the leakage-power opti-
+              mization on the leakage values of the library cells.
+
+              When you specify this option for a multicorner-multimode design,
+              you  must  use  the  set_scenario_options  command to select the
+              leakage scenarios before running the route_opt command.
+
+       -size_only
+              Performs only sizing of cells  in  topology-based  optimization.
+              You  can  use this option for designs that are very sensitive to
+              postroute optimization changes.
+
+              You control  the  sizing  method  by  setting  the  effort.   By
+              default, the tool runs medium effort optimization, which enables
+              in-place size-only optimization. To use footprint swapping,  set
+              the  -effort option to low. To use regular density-based sizing,
+              set the -effort option to high.
+
+       -area_recovery
+              Enables area recovery for cells that are not on timing  critical
+              paths.
+
+       -wire_size
+              Enables  the use of an additional technique that sizes the width
+              of route segments to fix setup time violations during  topology-
+              based optimization.
+
+              This  option  needs existing nondefault routing rules and it can
+              change netlist.  The tool applies nondefault  routing  rules  to
+              the  touched  nets  and the applied nondefault routing rules are
+              not removed after wire sizing.
+
+              If you specify this option and also enable block interface opti-
+              mization, the tool honors the option only for top-level nets.
+
+       -effort low | medium | high
+              Specifies  the  effort  level for postroute optimizations in the
+              route_opt flow. This option does not change  the  routing  steps
+              performed by the route_opt command.
+
+              Valid  values  are  low,  medium, and high.  In high effort, the
+              tool is more aggressive during optimization and runs three opti-
+              mization loops.
+
+              The default effort level is medium.
+
+       -initial_route_only
+              Runs  only  the initial routing stage and does not perform opti-
+              mization.
+
+              This option cannot  be  used  with  the  -skip_initial_route  or
+              -incremental options.
+
+       -skip_initial_route
+              Runs  the only topology-based optimization and ECO routing with-
+              out running initial routing.
+
+              Note that if signal integrity mode is enabled, this option  runs
+              ECO  routing  without  signal  integrity followed by ECO routing
+              with  signal  integrity.  This  differs  from  the  -incremental
+              option,  which  runs only ECO routing with signal integrity when
+              signal integrity mode is enabled.
+
+              Using this option on a design that is not  detail  routed  might
+              generate  erroneous  results;  therefore, you should verify that
+              the design is fully routed before you use this option.
+
+              This option cannot be used with the -initial_route_only, -incre-
+              mental, or -stage options.
+
+       -incremental
+              Disables  running  of  the initial routing steps.  The tool runs
+              only topology-based incremental optimization and ECO routing.
+
+              Note that if signal integrity mode is enabled, this option  runs
+              only  ECO routing with signal integrity and does not run the ECO
+              routing  step  without  signal  integrity,  as  the   -skip_ini-
+              tial_route option does.
+
+              This   option  cannot  be  used  with  the  -initial_route_only,
+              -skip_initial_route, or -stage options.
+
+       -only_wire_size
+              Performs only sizing of wires  during  topology-based  optimiza-
+              tion.   The tool applies nondefault routing rules to the touched
+              nets and the applied nondefault routing rules  are  not  removed
+              after  wire  sizing.  If you specify this option and also enable
+              block interface optimization, the tool honors  the  option  only
+              for top-level nets.
+
+       -only_hold_time
+              Specifies that only hold time violations are fixed.
+
+              This option is applicable only if you enabled hold fixing before
+              running the route_opt command. You enable hold fixing  by  using
+              the set_fix_hold command.
+
+              This option can be used only with the -incremental option.
+
+       -only_design_rule
+              Specifies that only design rule fixing is performed.
+
+              This option can be used only with the -incremental option.
+
+       -only_power_recovery
+              Specifies that only leakage power optimizations are performed.
+
+              This option can be used only with the -incremental option.
+
+       -only_area_recovery
+              Specifies that only area optimizations are performed.
+
+              This option can be used only with the -incremental option.
+
+       -register_to_register
+              Specifies  that  only  register-to-register optimization is per-
+              formed.
+
+              This option must be used with the -incremental option. The  only
+              other  options  that  you  can  specify  with  this  option  are
+              -size_only, -only_hold_time, or -only_design_rule.
+
+       -concurrent_clock_and_data
+              Optimizes the clock paths along with the data  paths.  The  data
+              paths are optimized to fix setup and hold violations, as well as
+              logical design rule violations.
+
+              By default, the route_opt command optimizes only data paths.
+
+              When you use this option, you must set  the  options  for  clock
+              path      optimization      by     using     the     set_concur-
+              rent_clock_and_data_strategy command.
+
+       -only_concurrent_clock_and_data
+              Optimizes the clock paths after performing  a  lightweight  data
+              path optimization that fixes only setup violations.
+
+              When  you  use  this  option, you must set the options for clock
+              path     optimization     by     using      the      set_concur-
+              rent_clock_and_data_strategy command.
+
+       -optimize_wire_via
+              Runs an extra wire length and via count optimization.
+
+              This  option  is supported only by the classic router and cannot
+              be used with Zroute.
+
+              If you specify this option and also enable block interface opti-
+              mization, the tool honors the option only for top-level nets.
+
+       -num_cpus count
+              Specifies  the  number of CPUs for detail routing and search and
+              repair routing.  You can use up to 63 CPUs.
+
+              By default, a single CPU is used.
+
+              This option is applicable only if  you  are  using  the  classic
+              router  and  you  set up multiple CPU mode by using the set_dis-
+              tributed_route command prior to running the route_opt command.
+
+              This option is supported only by the classic router  and  cannot
+              be used with Zroute.
+
+DESCRIPTION
+       This  command  performs simultaneous routing and postroute optimization
+       on the current design. The output of this command is a postroute  opti-
+       mized  design. The route_opt flow runs differently depending on whether
+       signal integrity mode is enabled.
+
+       A  default  (medium  effort)  signal-integrity-enabled  route_opt  flow
+       includes:
+
+       1.  Initial routing: Global routing, track assignment, and detail rout-
+         ing
+         If you are using the classic router, it also runs search and  repair.
+
+       2.  Topology-based  optimization  (adaptive) without considering signal
+         integrity
+
+       3. Topology-based signal integrity optimization
+
+       A default  (medium  effort)  signal-integrity-disabled  route_opt  flow
+       includes:
+
+       1.  Initial routing: Global routing, track assignment, and detail rout-
+         ing
+         If you are using the classic router, it also runs search and  repair.
+
+       2. Topology-based optimization without considering signal integrity
+
+       You  can  add  routing-based crosstalk reduction to the default flow by
+       using the -xtalk_reduction option. If you are using the classic router,
+       you  can add wire length and via count optimization to the default flow
+       by using the -optimize_wire_via  option.  The  signal-integrity-enabled
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> vi
+Error: Current design is not defined. (UID-4)
+Cannot find design
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> 
+icc_shell> cat cts_icc.tcl
+Error: unknown command 'cat' (CMD-005)
+icc_shell> more cts_icc.tcl
+Error: unknown command 'more' (CMD-005)
+icc_shell> 
+icc_shell> 
 icc_shell> exit
 
+Thank you...
 
-    while executing
-"get_app_var gui_suppress_auto_layout"
-    (procedure "iccGUI::on_current_design_changed_cb" line 10)
-    invoked from within
-"iccGUI::on_current_design_changed_cb physical {fpu.CEL;3} {{}} øhange ame"
-Error: Tcl Callback 'on_layout_activate_callback LayoutWindow LayoutWindow.3' failed
-Error: Tcl Callback 'on_layout_activate_callback LayoutWindow LayoutWindow.2' failed

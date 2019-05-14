@@ -1,24 +1,15 @@
-Warning: Failed to compute the effective capacitance for the timing arc
-	 (saed32rvt_ss0p95v25c/AND2X1_RVT) cluster_header/I0/U2/A2-->Y (min-falling positive_unate)
-	  because there is a problem with the driver's CCS data.
-	  [r/f inp_slew = 0.00742927/0.00741567, out_cap = 1.00514e+06  (lib units)] (RCCALC-004)
-Warning: Failed to compute the effective capacitance for the timing arc
-	 (saed32rvt_ss0p95v25c/AND2X1_RVT) cluster_header/I0/U2/A2-->Y (min-falling positive_unate)
-	  because there is a problem with the driver's CCS data.
-	  [r/f inp_slew = 0.00742927/0.00741567, out_cap = 1.00514e+06  (lib units)] (RCCALC-004)
  
 ****************************************
 Report : clock tree
 Design : fpu
 Version: L-2016.03-SP5-1
-Date   : Wed Apr 24 09:47:58 2019
+Date   : Mon May 13 22:56:24 2019
 ****************************************
 
+Information: Float pin scale factor for the 'max' operating condition of scenario 'default' is set to 1.000 (CTS-375)
 
 ======================= Clock Tree Summary ========================
 Clock                Sinks     CTBuffers ClkCells  Skew      LongestPath TotalDRC   BufferArea
 -----------------------------------------------------------------------------------------------
-ideal_clock1         4799      0         28        2375853.5000
-                                                             2375853.5000
-                                                                         3436           0.0000
+ideal_clock1         4799      63        91        0.1047    0.4267      1            286.1662
 1

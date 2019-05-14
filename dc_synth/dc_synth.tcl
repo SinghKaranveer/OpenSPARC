@@ -28,19 +28,19 @@ link
 check_design  > reports/synth_check_design.rpt
 
 ## Create Constraints 
-create_clock gclk -name ideal_clock1 -period 10
-set_input_delay 2.0 [ remove_from_collection [all_inputs] gclk ] -clock ideal_clock1
+create_clock gclk -name ideal_clock1 -period 20
+#set_input_delay 2.0 [ remove_from_collection [all_inputs] gclk ] -clock ideal_clock1
 set_output_delay 2.0 [all_outputs ] -clock ideal_clock1
 set_clock_uncertainty 0.05 [get_clocks ideal_clock1]
 set_clock_latency 0.4 [get_clocks ideal_clock1]
 set_clock_transition 0.1 [get_clocks ideal_clock1]
-set_max_area 0 
+set_max_area 0
 set_load 0.3 [ all_outputs ]
 
 ## Compilation 
 ## you can change medium to either low or high 
 compile -area_effort medium -map_effort medium
-
+#compile_ultra -incremental
 
 ## Below commands report area , cell, qor, resources, and timing information needed to analyze the design. 
 

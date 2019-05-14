@@ -3,7 +3,7 @@
 Report : cell
 Design : fpu
 Version: M-2016.12-SP1
-Date   : Mon Apr 15 22:56:49 2019
+Date   : Tue May 14 01:02:40 2019
 ****************************************
 
 Attributes:
@@ -15,21 +15,23 @@ Attributes:
 
 Cell                      Reference       Library             Area  Attributes
 --------------------------------------------------------------------------------
-cluster_header            bw_clk_cl_fpu_cmp               92.508417 h, n
-fpu_add                   fpu_add                         29404.461228
+U3                        DELLN3X2_RVT    saed32rvt_ss0p95v25c
+                                                          9.657472  
+cluster_header            bw_clk_cl_fpu_cmp               88.696257 h, n
+fpu_add                   fpu_add                         28747.244869
                                                                     h, n
-fpu_div                   fpu_div                         11625.563293
+fpu_div                   fpu_div                         11449.695642
                                                                     h, n
-fpu_in                    fpu_in                          5875.301020
+fpu_in                    fpu_in                          5676.560407
                                                                     h, n
-fpu_mul                   fpu_mul                         59564.745616
+fpu_mul                   fpu_mul                         57822.334278
                                                                     h, n
-fpu_out                   fpu_out                         1607.460787
+fpu_out                   fpu_out                         1591.958003
                                                                     h, n
-fpu_rptr_groups           fpu_rptr_groups                 97.845441 h
-i_fpu_inq_sram            bw_r_rf16x160                   26211.649735
+fpu_rptr_groups           fpu_rptr_groups                 19.314944 h
+i_fpu_inq_sram            bw_r_rf16x160                   26201.229830
                                                                     h, n
-test_stub                 test_stub_scan                  26.176832 h
+test_stub                 test_stub_scan                  24.143680 h
 --------------------------------------------------------------------------------
-Total 9 cells                                             134505.712370
+Total 10 cells                                            131630.835381
 1

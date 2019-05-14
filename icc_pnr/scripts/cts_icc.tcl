@@ -7,6 +7,7 @@
 ##Save the Cell and report timing
 
 clock_opt -clock_trees {ideal_clock1}
+route_zrt_group -all_clock_nets
 
 save_mw_cel -as s386_cts
 report_placement_utilization > reports/s386_cts_util.rpt

@@ -6,7 +6,7 @@ Report : timing
         -max_paths 10
 Design : fpu
 Version: M-2016.12-SP1
-Date   : Mon Apr 15 22:56:49 2019
+Date   : Tue May 14 01:02:40 2019
 ****************************************
 
  # A fanout number of 1000 was used for high fanout net computations.
@@ -14,632 +14,9 @@ Date   : Mon Apr 15 22:56:49 2019
 Operating Conditions: ss0p95v25c   Library: saed32rvt_ss0p95v25c
 Wire Load Model Mode: enclosed
 
-  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[2]
-              (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[17]
-            (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Path Group: ideal_clock1
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  mul64              70000                 saed32rvt_ss0p95v25c
-  mul_ppgenrow3_3    8000                  saed32rvt_ss0p95v25c
-  mul_ppgen3_121     ForQA                 saed32rvt_ss0p95v25c
-  mul_ppgen_392      ForQA                 saed32rvt_ss0p95v25c
-  mul_ppgen3_122     ForQA                 saed32rvt_ss0p95v25c
-  mul_csa32_136      ForQA                 saed32rvt_ss0p95v25c
-  mul_array1_1       16000                 saed32rvt_ss0p95v25c
-  mul_csa32_741      ForQA                 saed32rvt_ss0p95v25c
-  mul_csa42_56       ForQA                 saed32rvt_ss0p95v25c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock ideal_clock1 (rise edge)                          0.00       0.00
-  clock network delay (ideal)                             0.40       0.40
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[2]/CLK (SDFFX1_RVT)
-                                                          0.00       0.40 r
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[2]/Q (SDFFX1_RVT)      0.19       0.59 f
-  fpu_mul/i_m4stg_frac/ffrs1/q[2] (dff_s_SIZE64_1)        0.00       0.59 f
-  fpu_mul/i_m4stg_frac/U131/Y (IBUFFX2_RVT)               0.53       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a1/a[2] (mul_array1_1)        0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/a[2] (mul_ppgenrow3_3)
-                                                          0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/U19/Y (IBUFFX2_RVT)    15.87      16.99 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/U20/Y (INVX1_RVT)       0.05      17.03 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/am2 (mul_ppgen3_121)
-                                                          0.00      17.03 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/U1/Y (INVX0_RVT)
-                                                          0.25      17.28 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/U2/Y (INVX1_RVT)
-                                                          0.05      17.33 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/p1/a (mul_ppgen_392)
-                                                          0.00      17.33 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/p1/U2/Y (XOR2X2_RVT)
-                                                          0.14      17.46 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/p1/U5/Y (NAND2X0_RVT)
-                                                          0.06      17.52 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/p1/p_l (mul_ppgen_392)
-                                                          0.00      17.52 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_4_/p1_l (mul_ppgen3_121)
-                                                          0.00      17.52 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/p1m1_l (mul_ppgen3_122)
-                                                          0.00      17.52 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/p1/pm1_l (mul_ppgen_395)
-                                                          0.00      17.52 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/p1/U1/Y (OAI22X2_RVT)
-                                                          0.17      17.69 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/p1/z (mul_ppgen_395)
-                                                          0.00      17.69 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/sc1/a (mul_csa32_136)
-                                                          0.00      17.69 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/sc1/U1/Y (XOR2X2_RVT)
-                                                          0.19      17.89 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/sc1/U2/Y (XOR2X2_RVT)
-                                                          0.22      18.10 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/sc1/sum (mul_csa32_136)
-                                                          0.00      18.10 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/I1_5_/sum (mul_ppgen3_122)
-                                                          0.00      18.10 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I2/sum[5] (mul_ppgenrow3_3)
-                                                          0.00      18.10 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_2_17_/a (mul_csa32_741)
-                                                          0.00      18.10 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_2_17_/U1/Y (XOR2X2_RVT)
-                                                          0.19      18.29 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_2_17_/U2/Y (XOR2X2_RVT)
-                                                          0.20      18.49 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_2_17_/sum (mul_csa32_741)
-                                                          0.00      18.49 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/c (mul_csa42_56)
-                                                          0.00      18.49 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U4/Y (XOR2X2_RVT)
-                                                          0.13      18.62 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U2/Y (INVX0_RVT)
-                                                          0.10      18.72 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U3/Y (XNOR3X2_RVT)
-                                                          0.18      18.90 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U1/Y (INVX0_RVT)
-                                                          0.13      19.02 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/U5/Y (XNOR2X1_RVT)
-                                                          0.21      19.24 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_17_/sum (mul_csa42_56)
-                                                          0.00      19.24 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sum[17] (mul_array1_1)     0.00      19.24 r
-  fpu_mul/i_m4stg_frac/a1sum_dff/din[17] (dff_s_SIZE82_1)
-                                                          0.00      19.24 r
-  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[17]/D (SDFFX1_RVT)
-                                                          0.09      19.32 r
-  data arrival time                                                 19.32
-
-  clock ideal_clock1 (rise edge)                         10.00      10.00
-  clock network delay (ideal)                             0.40      10.40
-  clock uncertainty                                      -0.05      10.35
-  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[17]/CLK (SDFFX1_RVT)
-                                                          0.00      10.35 r
-  library setup time                                     -0.12      10.23
-  data required time                                                10.23
-  --------------------------------------------------------------------------
-  data required time                                                10.23
-  data arrival time                                                -19.32
-  --------------------------------------------------------------------------
-  slack (VIOLATED)                                                  -9.09
-
-
-  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[42]
-              (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Endpoint: fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[42]
-            (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Path Group: ideal_clock1
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  mul64              70000                 saed32rvt_ss0p95v25c
-  mul_ppgenrow3_4    8000                  saed32rvt_ss0p95v25c
-  mul_ppgen_697      ForQA                 saed32rvt_ss0p95v25c
-  mul_ppgen3_219     ForQA                 saed32rvt_ss0p95v25c
-  mul_csa32_239      ForQA                 saed32rvt_ss0p95v25c
-  mul_array1_0       16000                 saed32rvt_ss0p95v25c
-  mul_csa32_827      ForQA                 saed32rvt_ss0p95v25c
-  mul_csa42_147      ForQA                 saed32rvt_ss0p95v25c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock ideal_clock1 (rise edge)                          0.00       0.00
-  clock network delay (ideal)                             0.40       0.40
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[42]/CLK (SDFFX1_RVT)
-                                                          0.00       0.40 r
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[42]/Q (SDFFX1_RVT)     0.19       0.59 f
-  fpu_mul/i_m4stg_frac/ffrs1/q[42] (dff_s_SIZE64_1)       0.00       0.59 f
-  fpu_mul/i_m4stg_frac/U155/Y (IBUFFX2_RVT)               0.53       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/a[42] (mul_array1_0)       0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/a[42] (mul_ppgenrow3_4)
-                                                          0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/U41/Y (IBUFFX2_RVT)    15.78      16.90 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/U42/Y (INVX1_RVT)       0.05      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/a (mul_ppgen3_219)
-                                                          0.00      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/p0/a (mul_ppgen_697)
-                                                          0.00      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/p0/U5/Y (XOR2X1_RVT)
-                                                          0.39      17.34 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/p0/U4/Y (NAND2X0_RVT)
-                                                          0.07      17.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/p0/U1/Y (OAI22X1_RVT)
-                                                          0.15      17.55 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/p0/z (mul_ppgen_697)
-                                                          0.00      17.55 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/sc1/b (mul_csa32_239)
-                                                          0.00      17.55 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/sc1/U1/Y (XOR2X1_RVT)
-                                                          0.20      17.75 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/sc1/U2/Y (XOR2X1_RVT)
-                                                          0.22      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/sc1/sum (mul_csa32_239)
-                                                          0.00      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/sum (mul_ppgen3_219)
-                                                          0.00      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/sum[42] (mul_ppgenrow3_4)
-                                                          0.00      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_42_/a (mul_csa32_827)
-                                                          0.00      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_42_/U1/Y (XOR2X1_RVT)
-                                                          0.20      18.18 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_42_/U2/Y (XOR2X1_RVT)
-                                                          0.22      18.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_42_/sum (mul_csa32_827)
-                                                          0.00      18.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_42_/d (mul_csa42_147)
-                                                          0.00      18.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_42_/U7/Y (XOR2X1_RVT)
-                                                          0.20      18.60 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_42_/U2/Y (INVX0_RVT)
-                                                          0.11      18.72 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_42_/U1/Y (XNOR3X1_RVT)
-                                                          0.20      18.92 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_42_/U4/Y (INVX1_RVT)
-                                                          0.11      19.03 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_42_/U3/Y (XNOR2X1_RVT)
-                                                          0.21      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_42_/sum (mul_csa42_147)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sum[42] (mul_array1_0)     0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a0sum_dff/din[42] (dff_s_SIZE82_0)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[42]/D (SDFFX1_RVT)
-                                                          0.09      19.32 r
-  data arrival time                                                 19.32
-
-  clock ideal_clock1 (rise edge)                         10.00      10.00
-  clock network delay (ideal)                             0.40      10.40
-  clock uncertainty                                      -0.05      10.35
-  fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[42]/CLK (SDFFX1_RVT)
-                                                          0.00      10.35 r
-  library setup time                                     -0.12      10.23
-  data required time                                                10.23
-  --------------------------------------------------------------------------
-  data required time                                                10.23
-  data arrival time                                                -19.32
-  --------------------------------------------------------------------------
-  slack (VIOLATED)                                                  -9.09
-
-
-  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[38]
-              (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Endpoint: fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[38]
-            (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Path Group: ideal_clock1
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  mul64              70000                 saed32rvt_ss0p95v25c
-  mul_ppgenrow3_4    8000                  saed32rvt_ss0p95v25c
-  mul_ppgen_685      ForQA                 saed32rvt_ss0p95v25c
-  mul_ppgen3_215     ForQA                 saed32rvt_ss0p95v25c
-  mul_csa32_235      ForQA                 saed32rvt_ss0p95v25c
-  mul_array1_0       16000                 saed32rvt_ss0p95v25c
-  mul_csa32_823      ForQA                 saed32rvt_ss0p95v25c
-  mul_csa42_143      ForQA                 saed32rvt_ss0p95v25c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock ideal_clock1 (rise edge)                          0.00       0.00
-  clock network delay (ideal)                             0.40       0.40
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[38]/CLK (SDFFX1_RVT)
-                                                          0.00       0.40 r
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[38]/Q (SDFFX1_RVT)     0.19       0.59 f
-  fpu_mul/i_m4stg_frac/ffrs1/q[38] (dff_s_SIZE64_1)       0.00       0.59 f
-  fpu_mul/i_m4stg_frac/U143/Y (IBUFFX2_RVT)               0.53       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/a[38] (mul_array1_0)       0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/a[38] (mul_ppgenrow3_4)
-                                                          0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/U31/Y (IBUFFX2_RVT)    15.78      16.90 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/U32/Y (INVX1_RVT)       0.05      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_38_/a (mul_ppgen3_215)
-                                                          0.00      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_38_/p0/a (mul_ppgen_685)
-                                                          0.00      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_38_/p0/U5/Y (XOR2X1_RVT)
-                                                          0.39      17.34 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_38_/p0/U4/Y (NAND2X0_RVT)
-                                                          0.07      17.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_38_/p0/U1/Y (OAI22X1_RVT)
-                                                          0.15      17.55 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_38_/p0/z (mul_ppgen_685)
-                                                          0.00      17.55 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_38_/sc1/b (mul_csa32_235)
-                                                          0.00      17.55 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_38_/sc1/U1/Y (XOR2X1_RVT)
-                                                          0.20      17.75 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_38_/sc1/U3/Y (XOR2X1_RVT)
-                                                          0.22      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_38_/sc1/sum (mul_csa32_235)
-                                                          0.00      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_38_/sum (mul_ppgen3_215)
-                                                          0.00      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/sum[38] (mul_ppgenrow3_4)
-                                                          0.00      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_38_/a (mul_csa32_823)
-                                                          0.00      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_38_/U1/Y (XOR2X1_RVT)
-                                                          0.20      18.18 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_38_/U2/Y (XOR2X1_RVT)
-                                                          0.22      18.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_38_/sum (mul_csa32_823)
-                                                          0.00      18.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_38_/d (mul_csa42_143)
-                                                          0.00      18.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_38_/U1/Y (XOR2X1_RVT)
-                                                          0.20      18.60 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_38_/U3/Y (INVX0_RVT)
-                                                          0.11      18.72 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_38_/U2/Y (XNOR3X1_RVT)
-                                                          0.20      18.92 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_38_/U5/Y (INVX1_RVT)
-                                                          0.11      19.03 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_38_/U4/Y (XNOR2X1_RVT)
-                                                          0.21      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_38_/sum (mul_csa42_143)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sum[38] (mul_array1_0)     0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a0sum_dff/din[38] (dff_s_SIZE82_0)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[38]/D (SDFFX1_RVT)
-                                                          0.09      19.32 r
-  data arrival time                                                 19.32
-
-  clock ideal_clock1 (rise edge)                         10.00      10.00
-  clock network delay (ideal)                             0.40      10.40
-  clock uncertainty                                      -0.05      10.35
-  fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[38]/CLK (SDFFX1_RVT)
-                                                          0.00      10.35 r
-  library setup time                                     -0.12      10.23
-  data required time                                                10.23
-  --------------------------------------------------------------------------
-  data required time                                                10.23
-  data arrival time                                                -19.32
-  --------------------------------------------------------------------------
-  slack (VIOLATED)                                                  -9.09
-
-
-  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[6]
-              (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[13]
-            (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Path Group: ideal_clock1
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  mul64              70000                 saed32rvt_ss0p95v25c
-  mul_ppgenrow3_2    8000                  saed32rvt_ss0p95v25c
-  mul_ppgen_205      ForQA                 saed32rvt_ss0p95v25c
-  mul_ppgen3_64      ForQA                 saed32rvt_ss0p95v25c
-  mul_csa32_72       ForQA                 saed32rvt_ss0p95v25c
-  mul_array1_1       16000                 saed32rvt_ss0p95v25c
-  mul_csa32_737      ForQA                 saed32rvt_ss0p95v25c
-  mul_csa42_52       ForQA                 saed32rvt_ss0p95v25c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock ideal_clock1 (rise edge)                          0.00       0.00
-  clock network delay (ideal)                             0.40       0.40
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[6]/CLK (SDFFX1_RVT)
-                                                          0.00       0.40 r
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[6]/Q (SDFFX1_RVT)      0.19       0.59 f
-  fpu_mul/i_m4stg_frac/ffrs1/q[6] (dff_s_SIZE64_1)        0.00       0.59 f
-  fpu_mul/i_m4stg_frac/U128/Y (IBUFFX2_RVT)               0.53       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a1/a[6] (mul_array1_1)        0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/a[6] (mul_ppgenrow3_2)
-                                                          0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/U11/Y (IBUFFX2_RVT)    15.87      16.99 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/U12/Y (INVX1_RVT)       0.05      17.04 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_6_/a (mul_ppgen3_63)
-                                                          0.00      17.04 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_6_/p0/a (mul_ppgen_205)
-                                                          0.00      17.04 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_6_/p0/U5/Y (XOR2X1_RVT)
-                                                          0.39      17.42 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_6_/p0/U4/Y (NAND2X0_RVT)
-                                                          0.07      17.49 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_6_/p0/p_l (mul_ppgen_205)
-                                                          0.00      17.49 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_6_/p0_l (mul_ppgen3_63)
-                                                          0.00      17.49 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_7_/p0m1_l (mul_ppgen3_64)
-                                                          0.00      17.49 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_7_/p0/pm1_l (mul_ppgen_208)
-                                                          0.00      17.49 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_7_/p0/U1/Y (OAI22X2_RVT)
-                                                          0.17      17.66 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_7_/p0/z (mul_ppgen_208)
-                                                          0.00      17.66 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_7_/sc1/b (mul_csa32_72)
-                                                          0.00      17.66 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_7_/sc1/U1/Y (XOR2X2_RVT)
-                                                          0.20      17.86 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_7_/sc1/U2/Y (XOR2X2_RVT)
-                                                          0.22      18.07 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_7_/sc1/sum (mul_csa32_72)
-                                                          0.00      18.07 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/I1_7_/sum (mul_ppgen3_64)
-                                                          0.00      18.07 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I1/sum[7] (mul_ppgenrow3_2)
-                                                          0.00      18.07 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_2_13_/b (mul_csa32_737)
-                                                          0.00      18.07 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_2_13_/U2/Y (XOR2X2_RVT)
-                                                          0.20      18.27 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_2_13_/U1/Y (XOR2X2_RVT)
-                                                          0.21      18.48 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_2_13_/sum (mul_csa32_737)
-                                                          0.00      18.48 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_13_/c (mul_csa42_52)
-                                                          0.00      18.48 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_13_/U4/Y (XOR2X2_RVT)
-                                                          0.14      18.62 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_13_/U1/Y (INVX1_RVT)
-                                                          0.10      18.72 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_13_/U2/Y (XNOR3X2_RVT)
-                                                          0.17      18.90 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_13_/U3/Y (INVX0_RVT)
-                                                          0.13      19.02 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_13_/U5/Y (XNOR2X1_RVT)
-                                                          0.21      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_13_/sum (mul_csa42_52)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sum[13] (mul_array1_1)     0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a1sum_dff/din[13] (dff_s_SIZE82_1)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[13]/D (SDFFX1_RVT)
-                                                          0.09      19.32 r
-  data arrival time                                                 19.32
-
-  clock ideal_clock1 (rise edge)                         10.00      10.00
-  clock network delay (ideal)                             0.40      10.40
-  clock uncertainty                                      -0.05      10.35
-  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[13]/CLK (SDFFX1_RVT)
-                                                          0.00      10.35 r
-  library setup time                                     -0.12      10.23
-  data required time                                                10.23
-  --------------------------------------------------------------------------
-  data required time                                                10.23
-  data arrival time                                                -19.32
-  --------------------------------------------------------------------------
-  slack (VIOLATED)                                                  -9.09
-
-
-  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[42]
-              (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Endpoint: fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[43]
-            (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Path Group: ideal_clock1
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  mul64              70000                 saed32rvt_ss0p95v25c
-  mul_ppgenrow3_4    8000                  saed32rvt_ss0p95v25c
-  mul_ppgen_697      ForQA                 saed32rvt_ss0p95v25c
-  mul_ppgen3_220     ForQA                 saed32rvt_ss0p95v25c
-  mul_csa32_240      ForQA                 saed32rvt_ss0p95v25c
-  mul_array1_0       16000                 saed32rvt_ss0p95v25c
-  mul_csa32_828      ForQA                 saed32rvt_ss0p95v25c
-  mul_csa42_148      ForQA                 saed32rvt_ss0p95v25c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock ideal_clock1 (rise edge)                          0.00       0.00
-  clock network delay (ideal)                             0.40       0.40
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[42]/CLK (SDFFX1_RVT)
-                                                          0.00       0.40 r
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[42]/Q (SDFFX1_RVT)     0.19       0.59 f
-  fpu_mul/i_m4stg_frac/ffrs1/q[42] (dff_s_SIZE64_1)       0.00       0.59 f
-  fpu_mul/i_m4stg_frac/U155/Y (IBUFFX2_RVT)               0.53       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/a[42] (mul_array1_0)       0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/a[42] (mul_ppgenrow3_4)
-                                                          0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/U41/Y (IBUFFX2_RVT)    15.78      16.90 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/U42/Y (INVX1_RVT)       0.05      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/a (mul_ppgen3_219)
-                                                          0.00      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/p0/a (mul_ppgen_697)
-                                                          0.00      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/p0/U5/Y (XOR2X1_RVT)
-                                                          0.39      17.34 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/p0/U4/Y (NAND2X0_RVT)
-                                                          0.07      17.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/p0/p_l (mul_ppgen_697)
-                                                          0.00      17.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_42_/p0_l (mul_ppgen3_219)
-                                                          0.00      17.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_43_/p0m1_l (mul_ppgen3_220)
-                                                          0.00      17.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_43_/p0/pm1_l (mul_ppgen_700)
-                                                          0.00      17.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_43_/p0/U1/Y (OAI22X1_RVT)
-                                                          0.17      17.57 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_43_/p0/z (mul_ppgen_700)
-                                                          0.00      17.57 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_43_/sc1/b (mul_csa32_240)
-                                                          0.00      17.57 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_43_/sc1/U1/Y (XOR2X1_RVT)
-                                                          0.20      17.77 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_43_/sc1/U2/Y (XOR2X1_RVT)
-                                                          0.22      17.99 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_43_/sc1/sum (mul_csa32_240)
-                                                          0.00      17.99 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_43_/sum (mul_ppgen3_220)
-                                                          0.00      17.99 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/sum[43] (mul_ppgenrow3_4)
-                                                          0.00      17.99 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_43_/a (mul_csa32_828)
-                                                          0.00      17.99 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_43_/U2/Y (XOR2X1_RVT)
-                                                          0.20      18.20 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_43_/U3/Y (XOR2X1_RVT)
-                                                          0.20      18.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_43_/sum (mul_csa32_828)
-                                                          0.00      18.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_43_/d (mul_csa42_148)
-                                                          0.00      18.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_43_/U7/Y (XOR2X1_RVT)
-                                                          0.20      18.60 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_43_/U2/Y (INVX0_RVT)
-                                                          0.11      18.72 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_43_/U1/Y (XNOR3X1_RVT)
-                                                          0.20      18.91 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_43_/U4/Y (INVX1_RVT)
-                                                          0.11      19.03 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_43_/U3/Y (XNOR2X1_RVT)
-                                                          0.21      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_43_/sum (mul_csa42_148)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sum[43] (mul_array1_0)     0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a0sum_dff/din[43] (dff_s_SIZE82_0)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[43]/D (SDFFX1_RVT)
-                                                          0.09      19.32 r
-  data arrival time                                                 19.32
-
-  clock ideal_clock1 (rise edge)                         10.00      10.00
-  clock network delay (ideal)                             0.40      10.40
-  clock uncertainty                                      -0.05      10.35
-  fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[43]/CLK (SDFFX1_RVT)
-                                                          0.00      10.35 r
-  library setup time                                     -0.12      10.23
-  data required time                                                10.23
-  --------------------------------------------------------------------------
-  data required time                                                10.23
-  data arrival time                                                -19.32
-  --------------------------------------------------------------------------
-  slack (VIOLATED)                                                  -9.09
-
-
-  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[33]
-              (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Endpoint: fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[33]
-            (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Path Group: ideal_clock1
-  Path Type: max
-
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  mul64              70000                 saed32rvt_ss0p95v25c
-  mul_ppgenrow3_4    8000                  saed32rvt_ss0p95v25c
-  mul_ppgen_670      ForQA                 saed32rvt_ss0p95v25c
-  mul_ppgen3_210     ForQA                 saed32rvt_ss0p95v25c
-  mul_csa32_230      ForQA                 saed32rvt_ss0p95v25c
-  mul_array1_0       16000                 saed32rvt_ss0p95v25c
-  mul_csa32_818      ForQA                 saed32rvt_ss0p95v25c
-  mul_csa42_138      ForQA                 saed32rvt_ss0p95v25c
-
-  Point                                                   Incr       Path
-  --------------------------------------------------------------------------
-  clock ideal_clock1 (rise edge)                          0.00       0.00
-  clock network delay (ideal)                             0.40       0.40
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[33]/CLK (SDFFX1_RVT)
-                                                          0.00       0.40 r
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[33]/Q (SDFFX1_RVT)     0.19       0.59 f
-  fpu_mul/i_m4stg_frac/ffrs1/q[33] (dff_s_SIZE64_1)       0.00       0.59 f
-  fpu_mul/i_m4stg_frac/U147/Y (IBUFFX2_RVT)               0.53       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/a[33] (mul_array1_0)       0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/a[33] (mul_ppgenrow3_4)
-                                                          0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/U6/Y (IBUFFX2_RVT)     15.78      16.90 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/U7/Y (INVX1_RVT)        0.05      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_33_/a (mul_ppgen3_210)
-                                                          0.00      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_33_/p0/a (mul_ppgen_670)
-                                                          0.00      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_33_/p0/U5/Y (XOR2X1_RVT)
-                                                          0.39      17.34 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_33_/p0/U4/Y (NAND2X0_RVT)
-                                                          0.07      17.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_33_/p0/U1/Y (OAI22X1_RVT)
-                                                          0.15      17.55 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_33_/p0/z (mul_ppgen_670)
-                                                          0.00      17.55 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_33_/sc1/b (mul_csa32_230)
-                                                          0.00      17.55 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_33_/sc1/U1/Y (XOR2X1_RVT)
-                                                          0.20      17.75 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_33_/sc1/U3/Y (XOR2X1_RVT)
-                                                          0.22      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_33_/sc1/sum (mul_csa32_230)
-                                                          0.00      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_33_/sum (mul_ppgen3_210)
-                                                          0.00      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/sum[33] (mul_ppgenrow3_4)
-                                                          0.00      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_33_/a (mul_csa32_818)
-                                                          0.00      17.98 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_33_/U1/Y (XOR2X1_RVT)
-                                                          0.20      18.18 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_33_/U2/Y (XOR2X1_RVT)
-                                                          0.22      18.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_33_/sum (mul_csa32_818)
-                                                          0.00      18.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_33_/d (mul_csa42_138)
-                                                          0.00      18.40 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_33_/U1/Y (XOR2X1_RVT)
-                                                          0.20      18.61 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_33_/U5/Y (INVX1_RVT)
-                                                          0.11      18.72 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_33_/U2/Y (XNOR3X1_RVT)
-                                                          0.20      18.91 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_33_/U4/Y (INVX1_RVT)
-                                                          0.11      19.03 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_33_/U3/Y (XNOR2X1_RVT)
-                                                          0.21      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_33_/sum (mul_csa42_138)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sum[33] (mul_array1_0)     0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a0sum_dff/din[33] (dff_s_SIZE82_0)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[33]/D (SDFFX1_RVT)
-                                                          0.09      19.32 r
-  data arrival time                                                 19.32
-
-  clock ideal_clock1 (rise edge)                         10.00      10.00
-  clock network delay (ideal)                             0.40      10.40
-  clock uncertainty                                      -0.05      10.35
-  fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[33]/CLK (SDFFX1_RVT)
-                                                          0.00      10.35 r
-  library setup time                                     -0.12      10.23
-  data required time                                                10.23
-  --------------------------------------------------------------------------
-  data required time                                                10.23
-  data arrival time                                                -19.32
-  --------------------------------------------------------------------------
-  slack (VIOLATED)                                                  -9.09
-
-
   Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[18]
               (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Endpoint: fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[20]
+  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[18]
             (rising edge-triggered flip-flop clocked by ideal_clock1)
   Path Group: ideal_clock1
   Path Type: max
@@ -647,13 +24,13 @@ Wire Load Model Mode: enclosed
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
   mul64              70000                 saed32rvt_ss0p95v25c
-  mul_ppgenrow3_4    8000                  saed32rvt_ss0p95v25c
-  mul_ppgen_625      ForQA                 saed32rvt_ss0p95v25c
-  mul_ppgen3_196     ForQA                 saed32rvt_ss0p95v25c
-  mul_csa32_216      ForQA                 saed32rvt_ss0p95v25c
-  mul_array1_0       16000                 saed32rvt_ss0p95v25c
-  mul_csa32_805      ForQA                 saed32rvt_ss0p95v25c
-  mul_csa42_125      ForQA                 saed32rvt_ss0p95v25c
+  mul_ppgen_49       ForQA                 saed32rvt_ss0p95v25c
+  mul_ppgenrow3_1    8000                  saed32rvt_ss0p95v25c
+  mul_ppgen3_15      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa32_17       ForQA                 saed32rvt_ss0p95v25c
+  mul_array1_1       16000                 saed32rvt_ss0p95v25c
+  mul_csa32_669      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa42_57       ForQA                 saed32rvt_ss0p95v25c
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
@@ -663,94 +40,80 @@ Wire Load Model Mode: enclosed
                                                           0.00       0.40 r
   fpu_mul/i_m4stg_frac/ffrs1/q_reg[18]/Q (SDFFX1_RVT)     0.19       0.59 f
   fpu_mul/i_m4stg_frac/ffrs1/q[18] (dff_s_SIZE64_1)       0.00       0.59 f
-  fpu_mul/i_m4stg_frac/U140/Y (IBUFFX2_RVT)               0.53       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/a[18] (mul_array1_0)       0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/a[18] (mul_ppgenrow3_4)
+  fpu_mul/i_m4stg_frac/U75/Y (IBUFFX2_RVT)                0.53       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/a[18] (mul_array1_1)       0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/a[18] (mul_ppgenrow3_1)
                                                           0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/U18/Y (IBUFFX2_RVT)    15.78      16.90 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/U19/Y (INVX1_RVT)       0.05      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_18_/a (mul_ppgen3_195)
-                                                          0.00      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_18_/p0/a (mul_ppgen_625)
-                                                          0.00      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_18_/p0/U2/Y (INVX0_RVT)
-                                                          0.25      17.19 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_18_/p0/U3/Y (INVX1_RVT)
-                                                          0.04      17.24 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_18_/p0/U7/Y (XOR2X1_RVT)
-                                                          0.15      17.38 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_18_/p0/U6/Y (NAND2X0_RVT)
-                                                          0.07      17.45 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_18_/p0/p_l (mul_ppgen_625)
-                                                          0.00      17.45 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_18_/p0_l (mul_ppgen3_195)
-                                                          0.00      17.45 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_19_/p0m1_l (mul_ppgen3_196)
-                                                          0.00      17.45 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_19_/p0/pm1_l (mul_ppgen_628)
-                                                          0.00      17.45 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_19_/p0/U1/Y (OAI22X2_RVT)
-                                                          0.16      17.61 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_19_/p0/z (mul_ppgen_628)
-                                                          0.00      17.61 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_19_/sc1/b (mul_csa32_216)
-                                                          0.00      17.61 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_19_/sc1/U2/Y (XOR2X2_RVT)
-                                                          0.20      17.81 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_19_/sc1/U3/Y (AO22X1_RVT)
-                                                          0.18      17.99 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_19_/sc1/cout (mul_csa32_216)
-                                                          0.00      17.99 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I1_19_/cout (mul_ppgen3_196)
-                                                          0.00      17.99 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/cout[19] (mul_ppgenrow3_4)
-                                                          0.00      17.99 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_20_/b (mul_csa32_805)
-                                                          0.00      17.99 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_20_/U1/Y (XOR2X2_RVT)
-                                                          0.21      18.20 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_20_/U2/Y (XOR2X1_RVT)
-                                                          0.22      18.42 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_20_/sum (mul_csa32_805)
-                                                          0.00      18.42 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_20_/d (mul_csa42_125)
-                                                          0.00      18.42 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_20_/U3/Y (XOR2X2_RVT)
-                                                          0.20      18.61 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_20_/U2/Y (INVX1_RVT)
-                                                          0.11      18.72 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_20_/U1/Y (XNOR3X2_RVT)
-                                                          0.18      18.90 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_20_/U4/Y (INVX1_RVT)
-                                                          0.12      19.02 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_20_/U5/Y (XNOR2X1_RVT)
-                                                          0.21      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_20_/sum (mul_csa42_125)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sum[20] (mul_array1_0)     0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a0sum_dff/din[20] (dff_s_SIZE82_0)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[20]/D (SDFFX1_RVT)
-                                                          0.09      19.32 r
-  data arrival time                                                 19.32
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/a (mul_ppgen3_15)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/p0/a (mul_ppgen_49)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/p0/U5/Y (XOR2X1_RVT)
+                                                         33.00      34.12 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/p0/U4/Y (NAND2X0_RVT)
+                                                          0.07      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/p0/U1/Y (OAI22X1_RVT)
+                                                          0.15      34.34 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/p0/z (mul_ppgen_49)
+                                                          0.00      34.34 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/sc1/b (mul_csa32_17)
+                                                          0.00      34.34 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/sc1/U2/Y (XOR2X1_RVT)
+                                                          0.20      34.55 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/sc1/U3/Y (XOR2X1_RVT)
+                                                          0.22      34.77 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/sc1/sum (mul_csa32_17)
+                                                          0.00      34.77 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/sum (mul_ppgen3_15)
+                                                          0.00      34.77 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/sum[18] (mul_ppgenrow3_1)
+                                                          0.00      34.77 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_18_/a (mul_csa32_669)
+                                                          0.00      34.77 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_18_/U3/Y (XOR2X1_RVT)
+                                                          0.20      34.97 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_18_/U2/Y (XOR2X1_RVT)
+                                                          0.22      35.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_18_/sum (mul_csa32_669)
+                                                          0.00      35.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_18_/d (mul_csa42_57)
+                                                          0.00      35.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_18_/U3/Y (XOR2X1_RVT)
+                                                          0.20      35.39 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_18_/U2/Y (INVX0_RVT)
+                                                          0.11      35.51 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_18_/U1/Y (XNOR3X2_RVT)
+                                                          0.18      35.69 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_18_/U7/Y (INVX1_RVT)
+                                                          0.12      35.81 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_18_/U4/Y (XNOR2X1_RVT)
+                                                          0.21      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_18_/sum (mul_csa42_57)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sum[18] (mul_array1_1)     0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/din[18] (dff_s_SIZE82_1)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[18]/D (SDFFX1_RVT)
+                                                          0.09      36.11 r
+  data arrival time                                                 36.11
 
-  clock ideal_clock1 (rise edge)                         10.00      10.00
-  clock network delay (ideal)                             0.40      10.40
-  clock uncertainty                                      -0.05      10.35
-  fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[20]/CLK (SDFFX1_RVT)
-                                                          0.00      10.35 r
-  library setup time                                     -0.12      10.23
-  data required time                                                10.23
+  clock ideal_clock1 (rise edge)                         15.00      15.00
+  clock network delay (ideal)                             0.40      15.40
+  clock uncertainty                                      -0.05      15.35
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[18]/CLK (SDFFX1_RVT)
+                                                          0.00      15.35 r
+  library setup time                                     -0.12      15.23
+  data required time                                                15.23
   --------------------------------------------------------------------------
-  data required time                                                10.23
-  data arrival time                                                -19.32
+  data required time                                                15.23
+  data arrival time                                                -36.11
   --------------------------------------------------------------------------
-  slack (VIOLATED)                                                  -9.09
+  slack (VIOLATED)                                                 -20.88
 
 
-  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[30]
+  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[46]
               (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[31]
+  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[47]
             (rising edge-triggered flip-flop clocked by ideal_clock1)
   Path Group: ideal_clock1
   Path Type: max
@@ -758,106 +121,104 @@ Wire Load Model Mode: enclosed
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
   mul64              70000                 saed32rvt_ss0p95v25c
+  mul_ppgen_133      ForQA                 saed32rvt_ss0p95v25c
   mul_ppgenrow3_1    8000                  saed32rvt_ss0p95v25c
-  mul_ppgen_85       ForQA                 saed32rvt_ss0p95v25c
-  mul_ppgen3_28      ForQA                 saed32rvt_ss0p95v25c
-  mul_csa32_30       ForQA                 saed32rvt_ss0p95v25c
+  mul_ppgen3_44      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa32_46       ForQA                 saed32rvt_ss0p95v25c
   mul_array1_1       16000                 saed32rvt_ss0p95v25c
-  mul_csa32_682      ForQA                 saed32rvt_ss0p95v25c
-  mul_csa42_70       ForQA                 saed32rvt_ss0p95v25c
+  mul_csa32_698      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa42_86       ForQA                 saed32rvt_ss0p95v25c
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock ideal_clock1 (rise edge)                          0.00       0.00
   clock network delay (ideal)                             0.40       0.40
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[30]/CLK (SDFFX1_RVT)
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[46]/CLK (SDFFX1_RVT)
                                                           0.00       0.40 r
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[30]/Q (SDFFX1_RVT)     0.19       0.59 f
-  fpu_mul/i_m4stg_frac/ffrs1/q[30] (dff_s_SIZE64_1)       0.00       0.59 f
-  fpu_mul/i_m4stg_frac/U144/Y (IBUFFX2_RVT)               0.47       1.06 r
-  fpu_mul/i_m4stg_frac/ary1_a1/a[30] (mul_array1_1)       0.00       1.06 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/a[30] (mul_ppgenrow3_1)
-                                                          0.00       1.06 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/U31/Y (IBUFFX2_RVT)    15.87      16.93 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/U32/Y (INVX1_RVT)       0.05      16.98 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_30_/a (mul_ppgen3_27)
-                                                          0.00      16.98 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_30_/p0/a (mul_ppgen_85)
-                                                          0.00      16.98 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_30_/p0/U5/Y (XOR2X1_RVT)
-                                                          0.39      17.37 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_30_/p0/U4/Y (NAND2X0_RVT)
-                                                          0.07      17.44 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_30_/p0/p_l (mul_ppgen_85)
-                                                          0.00      17.44 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_30_/p0_l (mul_ppgen3_27)
-                                                          0.00      17.44 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_31_/p0m1_l (mul_ppgen3_28)
-                                                          0.00      17.44 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_31_/p0/pm1_l (mul_ppgen_88)
-                                                          0.00      17.44 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_31_/p0/U1/Y (OAI22X2_RVT)
-                                                          0.17      17.61 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_31_/p0/z (mul_ppgen_88)
-                                                          0.00      17.61 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_31_/sc1/b (mul_csa32_30)
-                                                          0.00      17.61 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_31_/sc1/U2/Y (XOR2X2_RVT)
-                                                          0.20      17.81 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_31_/sc1/U1/Y (XOR2X2_RVT)
-                                                          0.22      18.03 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_31_/sc1/sum (mul_csa32_30)
-                                                          0.00      18.03 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_31_/sum (mul_ppgen3_28)
-                                                          0.00      18.03 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/sum[31] (mul_ppgenrow3_1)
-                                                          0.00      18.03 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_31_/a (mul_csa32_682)
-                                                          0.00      18.03 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_31_/U1/Y (XOR2X2_RVT)
-                                                          0.19      18.21 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_31_/U2/Y (XOR2X2_RVT)
-                                                          0.22      18.43 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_31_/sum (mul_csa32_682)
-                                                          0.00      18.43 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_31_/d (mul_csa42_70)
-                                                          0.00      18.43 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_31_/U3/Y (XOR2X2_RVT)
-                                                          0.19      18.62 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_31_/U2/Y (INVX0_RVT)
-                                                          0.10      18.72 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_31_/U4/Y (XNOR3X2_RVT)
-                                                          0.18      18.90 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_31_/U1/Y (INVX0_RVT)
-                                                          0.13      19.02 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_31_/U5/Y (XNOR2X1_RVT)
-                                                          0.21      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_31_/sum (mul_csa42_70)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sum[31] (mul_array1_1)     0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a1sum_dff/din[31] (dff_s_SIZE82_1)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[31]/D (SDFFX1_RVT)
-                                                          0.09      19.32 r
-  data arrival time                                                 19.32
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[46]/Q (SDFFX1_RVT)     0.19       0.59 f
+  fpu_mul/i_m4stg_frac/ffrs1/q[46] (dff_s_SIZE64_1)       0.00       0.59 f
+  fpu_mul/i_m4stg_frac/U150/Y (IBUFFX2_RVT)               0.53       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/a[46] (mul_array1_1)       0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/a[46] (mul_ppgenrow3_1)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_46_/a (mul_ppgen3_43)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_46_/p0/a (mul_ppgen_133)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_46_/p0/U6/Y (XOR2X1_RVT)
+                                                         33.00      34.12 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_46_/p0/U5/Y (NAND2X0_RVT)
+                                                          0.07      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_46_/p0/p_l (mul_ppgen_133)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_46_/p0_l (mul_ppgen3_43)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/p0m1_l (mul_ppgen3_44)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/p0/pm1_l (mul_ppgen_136)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/p0/U1/Y (OAI22X1_RVT)
+                                                          0.17      34.36 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/p0/z (mul_ppgen_136)
+                                                          0.00      34.36 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/sc1/b (mul_csa32_46)
+                                                          0.00      34.36 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/sc1/U1/Y (XOR2X2_RVT)
+                                                          0.19      34.55 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/sc1/U3/Y (XOR2X1_RVT)
+                                                          0.22      34.77 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/sc1/sum (mul_csa32_46)
+                                                          0.00      34.77 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/sum (mul_ppgen3_44)
+                                                          0.00      34.77 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/sum[47] (mul_ppgenrow3_1)
+                                                          0.00      34.77 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_47_/a (mul_csa32_698)
+                                                          0.00      34.77 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_47_/U2/Y (XOR2X1_RVT)
+                                                          0.20      34.97 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_47_/U3/Y (XOR2X1_RVT)
+                                                          0.22      35.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_47_/sum (mul_csa32_698)
+                                                          0.00      35.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_47_/d (mul_csa42_86)
+                                                          0.00      35.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_47_/U3/Y (XOR2X1_RVT)
+                                                          0.20      35.39 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_47_/U5/Y (INVX1_RVT)
+                                                          0.11      35.51 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_47_/U4/Y (XNOR3X1_RVT)
+                                                          0.20      35.70 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_47_/U7/Y (INVX1_RVT)
+                                                          0.11      35.81 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_47_/U6/Y (XNOR2X1_RVT)
+                                                          0.21      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_47_/sum (mul_csa42_86)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sum[47] (mul_array1_1)     0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/din[47] (dff_s_SIZE82_1)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[47]/D (SDFFX1_RVT)
+                                                          0.09      36.11 r
+  data arrival time                                                 36.11
 
-  clock ideal_clock1 (rise edge)                         10.00      10.00
-  clock network delay (ideal)                             0.40      10.40
-  clock uncertainty                                      -0.05      10.35
-  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[31]/CLK (SDFFX1_RVT)
-                                                          0.00      10.35 r
-  library setup time                                     -0.12      10.23
-  data required time                                                10.23
+  clock ideal_clock1 (rise edge)                         15.00      15.00
+  clock network delay (ideal)                             0.40      15.40
+  clock uncertainty                                      -0.05      15.35
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[47]/CLK (SDFFX1_RVT)
+                                                          0.00      15.35 r
+  library setup time                                     -0.12      15.23
+  data required time                                                15.23
   --------------------------------------------------------------------------
-  data required time                                                10.23
-  data arrival time                                                -19.32
+  data required time                                                15.23
+  data arrival time                                                -36.11
   --------------------------------------------------------------------------
-  slack (VIOLATED)                                                  -9.09
+  slack (VIOLATED)                                                 -20.88
 
 
-  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[62]
+  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[21]
               (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[64]
+  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[22]
             (rising edge-triggered flip-flop clocked by ideal_clock1)
   Path Group: ideal_clock1
   Path Type: max
@@ -865,98 +226,104 @@ Wire Load Model Mode: enclosed
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
   mul64              70000                 saed32rvt_ss0p95v25c
+  mul_ppgen_58       ForQA                 saed32rvt_ss0p95v25c
   mul_ppgenrow3_1    8000                  saed32rvt_ss0p95v25c
-  mul_ppgen_188      ForQA                 saed32rvt_ss0p95v25c
-  mul_ppgen3sign_1   ForQA                 saed32rvt_ss0p95v25c
-  mul_csa32_63       ForQA                 saed32rvt_ss0p95v25c
+  mul_ppgen3_19      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa32_21       ForQA                 saed32rvt_ss0p95v25c
   mul_array1_1       16000                 saed32rvt_ss0p95v25c
-  mul_csa32_715      ForQA                 saed32rvt_ss0p95v25c
-  mul_csa42_103      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa32_673      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa42_61       ForQA                 saed32rvt_ss0p95v25c
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock ideal_clock1 (rise edge)                          0.00       0.00
   clock network delay (ideal)                             0.40       0.40
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[62]/CLK (SDFFX1_RVT)
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[21]/CLK (SDFFX1_RVT)
                                                           0.00       0.40 r
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[62]/Q (SDFFX1_RVT)     0.19       0.59 f
-  fpu_mul/i_m4stg_frac/ffrs1/q[62] (dff_s_SIZE64_1)       0.00       0.59 f
-  fpu_mul/i_m4stg_frac/U120/Y (IBUFFX2_RVT)               0.53       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a1/a[62] (mul_array1_1)       0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/a[62] (mul_ppgenrow3_1)
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[21]/Q (SDFFX1_RVT)     0.19       0.59 f
+  fpu_mul/i_m4stg_frac/ffrs1/q[21] (dff_s_SIZE64_1)       0.00       0.59 f
+  fpu_mul/i_m4stg_frac/U126/Y (IBUFFX2_RVT)               0.53       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/a[21] (mul_array1_1)       0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/a[21] (mul_ppgenrow3_1)
                                                           0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/U28/Y (IBUFFX2_RVT)    15.78      16.90 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/U29/Y (INVX1_RVT)       0.05      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I2/am2 (mul_ppgen3sign_1)
-                                                          0.00      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I2/p1_64_/a (mul_ppgen_188)
-                                                          0.00      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I2/p1_64_/U5/Y (XOR2X1_RVT)
-                                                          0.39      17.34 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I2/p1_64_/U4/Y (NAND2X0_RVT)
-                                                          0.07      17.41 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I2/p1_64_/U1/Y (OAI22X1_RVT)
-                                                          0.16      17.57 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I2/p1_64_/z (mul_ppgen_188)
-                                                          0.00      17.57 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I2/sc1_64_/a (mul_csa32_63)
-                                                          0.00      17.57 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I2/sc1_64_/U1/Y (XOR2X1_RVT)
-                                                          0.20      17.77 r
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I2/sc1_64_/U2/Y (XOR2X1_RVT)
-                                                          0.23      18.00 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I2/sc1_64_/sum (mul_csa32_63)
-                                                          0.00      18.00 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/I2/sum[0] (mul_ppgen3sign_1)
-                                                          0.00      18.00 f
-  fpu_mul/i_m4stg_frac/ary1_a1/I0/sum[64] (mul_ppgenrow3_1)
-                                                          0.00      18.00 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_64_/a (mul_csa32_715)
-                                                          0.00      18.00 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_64_/U1/Y (XOR2X1_RVT)
-                                                          0.19      18.19 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_64_/U3/Y (XOR2X1_RVT)
-                                                          0.23      18.42 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_64_/sum (mul_csa32_715)
-                                                          0.00      18.42 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_64_/d (mul_csa42_103)
-                                                          0.00      18.42 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_64_/U1/Y (XOR2X1_RVT)
-                                                          0.19      18.61 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_64_/U5/Y (INVX1_RVT)
-                                                          0.11      18.72 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_64_/U3/Y (XNOR3X1_RVT)
-                                                          0.19      18.91 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_64_/U2/Y (INVX1_RVT)
-                                                          0.11      19.02 f
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_64_/U4/Y (XNOR2X1_RVT)
-                                                          0.21      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sc3_64_/sum (mul_csa42_103)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a1/sum[64] (mul_array1_1)     0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a1sum_dff/din[64] (dff_s_SIZE82_1)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[64]/D (SDFFX1_RVT)
-                                                          0.09      19.32 r
-  data arrival time                                                 19.32
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_21_/a (mul_ppgen3_18)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_21_/p0/a (mul_ppgen_58)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_21_/p0/U4/Y (XOR2X1_RVT)
+                                                         33.00      34.12 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_21_/p0/U5/Y (NAND2X0_RVT)
+                                                          0.07      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_21_/p0/p_l (mul_ppgen_58)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_21_/p0_l (mul_ppgen3_18)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_22_/p0m1_l (mul_ppgen3_19)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_22_/p0/pm1_l (mul_ppgen_61)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_22_/p0/U2/Y (OAI22X1_RVT)
+                                                          0.17      34.36 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_22_/p0/z (mul_ppgen_61)
+                                                          0.00      34.36 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_22_/sc1/b (mul_csa32_21)
+                                                          0.00      34.36 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_22_/sc1/U3/Y (XOR2X1_RVT)
+                                                          0.22      34.57 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_22_/sc1/U2/Y (XOR2X1_RVT)
+                                                          0.23      34.80 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_22_/sc1/sum (mul_csa32_21)
+                                                          0.00      34.80 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_22_/sum (mul_ppgen3_19)
+                                                          0.00      34.80 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/sum[22] (mul_ppgenrow3_1)
+                                                          0.00      34.80 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_22_/a (mul_csa32_673)
+                                                          0.00      34.80 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_22_/U1/Y (XOR2X2_RVT)
+                                                          0.19      34.99 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_22_/U2/Y (XOR2X1_RVT)
+                                                          0.22      35.22 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_22_/sum (mul_csa32_673)
+                                                          0.00      35.22 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_22_/d (mul_csa42_61)
+                                                          0.00      35.22 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_22_/U3/Y (XOR2X2_RVT)
+                                                          0.19      35.41 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_22_/U2/Y (INVX0_RVT)
+                                                          0.10      35.51 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_22_/U1/Y (XNOR3X2_RVT)
+                                                          0.18      35.69 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_22_/U6/Y (INVX1_RVT)
+                                                          0.12      35.81 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_22_/U7/Y (XNOR2X1_RVT)
+                                                          0.21      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_22_/sum (mul_csa42_61)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sum[22] (mul_array1_1)     0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/din[22] (dff_s_SIZE82_1)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[22]/D (SDFFX1_RVT)
+                                                          0.09      36.11 r
+  data arrival time                                                 36.11
 
-  clock ideal_clock1 (rise edge)                         10.00      10.00
-  clock network delay (ideal)                             0.40      10.40
-  clock uncertainty                                      -0.05      10.35
-  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[64]/CLK (SDFFX1_RVT)
-                                                          0.00      10.35 r
-  library setup time                                     -0.12      10.23
-  data required time                                                10.23
+  clock ideal_clock1 (rise edge)                         15.00      15.00
+  clock network delay (ideal)                             0.40      15.40
+  clock uncertainty                                      -0.05      15.35
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[22]/CLK (SDFFX1_RVT)
+                                                          0.00      15.35 r
+  library setup time                                     -0.12      15.23
+  data required time                                                15.23
   --------------------------------------------------------------------------
-  data required time                                                10.23
-  data arrival time                                                -19.32
+  data required time                                                15.23
+  data arrival time                                                -36.11
   --------------------------------------------------------------------------
-  slack (VIOLATED)                                                  -9.08
+  slack (VIOLATED)                                                 -20.88
 
 
-  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[63]
+  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[26]
               (rising edge-triggered flip-flop clocked by ideal_clock1)
-  Endpoint: fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[65]
+  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[27]
             (rising edge-triggered flip-flop clocked by ideal_clock1)
   Path Group: ideal_clock1
   Path Type: max
@@ -964,93 +331,721 @@ Wire Load Model Mode: enclosed
   Des/Clust/Port     Wire Load Model       Library
   ------------------------------------------------
   mul64              70000                 saed32rvt_ss0p95v25c
-  mul_ppgenrow3_4    8000                  saed32rvt_ss0p95v25c
-  mul_ppgen_765      ForQA                 saed32rvt_ss0p95v25c
-  mul_ppgen3sign_4   ForQA                 saed32rvt_ss0p95v25c
-  mul_csa32_262      ForQA                 saed32rvt_ss0p95v25c
-  mul_array1_0       16000                 saed32rvt_ss0p95v25c
-  mul_csa32_850      ForQA                 saed32rvt_ss0p95v25c
-  mul_csa42_170      ForQA                 saed32rvt_ss0p95v25c
+  mul_ppgen_73       ForQA                 saed32rvt_ss0p95v25c
+  mul_ppgenrow3_1    8000                  saed32rvt_ss0p95v25c
+  mul_ppgen3_24      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa32_26       ForQA                 saed32rvt_ss0p95v25c
+  mul_array1_1       16000                 saed32rvt_ss0p95v25c
+  mul_csa32_678      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa42_66       ForQA                 saed32rvt_ss0p95v25c
 
   Point                                                   Incr       Path
   --------------------------------------------------------------------------
   clock ideal_clock1 (rise edge)                          0.00       0.00
   clock network delay (ideal)                             0.40       0.40
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[63]/CLK (SDFFX1_RVT)
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[26]/CLK (SDFFX1_RVT)
                                                           0.00       0.40 r
-  fpu_mul/i_m4stg_frac/ffrs1/q_reg[63]/Q (SDFFX1_RVT)     0.19       0.59 f
-  fpu_mul/i_m4stg_frac/ffrs1/q[63] (dff_s_SIZE64_1)       0.00       0.59 f
-  fpu_mul/i_m4stg_frac/U122/Y (IBUFFX2_RVT)               0.53       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/a[63] (mul_array1_0)       0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/a[63] (mul_ppgenrow3_4)
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[26]/Q (SDFFX1_RVT)     0.19       0.59 f
+  fpu_mul/i_m4stg_frac/ffrs1/q[26] (dff_s_SIZE64_1)       0.00       0.59 f
+  fpu_mul/i_m4stg_frac/U155/Y (IBUFFX2_RVT)               0.53       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/a[26] (mul_array1_1)       0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/a[26] (mul_ppgenrow3_1)
                                                           0.00       1.12 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/U48/Y (IBUFFX2_RVT)    15.78      16.90 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/U49/Y (INVX1_RVT)       0.05      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I2/am1 (mul_ppgen3sign_4)
-                                                          0.00      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I2/p1_65_/a (mul_ppgen_765)
-                                                          0.00      16.95 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I2/p1_65_/U5/Y (XOR2X1_RVT)
-                                                          0.39      17.34 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I2/p1_65_/U4/Y (NAND2X0_RVT)
-                                                          0.07      17.41 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I2/p1_65_/U1/Y (OAI22X1_RVT)
-                                                          0.16      17.57 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I2/p1_65_/z (mul_ppgen_765)
-                                                          0.00      17.57 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I2/sc1_65_/a (mul_csa32_262)
-                                                          0.00      17.57 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I2/sc1_65_/U1/Y (XOR2X1_RVT)
-                                                          0.20      17.77 r
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I2/sc1_65_/U2/Y (XOR2X1_RVT)
-                                                          0.23      18.00 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I2/sc1_65_/sum (mul_csa32_262)
-                                                          0.00      18.00 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/I2/sum[1] (mul_ppgen3sign_4)
-                                                          0.00      18.00 f
-  fpu_mul/i_m4stg_frac/ary1_a0/I0/sum[65] (mul_ppgenrow3_4)
-                                                          0.00      18.00 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_65_/a (mul_csa32_850)
-                                                          0.00      18.00 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_65_/U1/Y (XOR2X1_RVT)
-                                                          0.19      18.19 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_65_/U2/Y (XOR2X1_RVT)
-                                                          0.23      18.42 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc2_1_65_/sum (mul_csa32_850)
-                                                          0.00      18.42 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_65_/d (mul_csa42_170)
-                                                          0.00      18.42 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_65_/U1/Y (XOR2X1_RVT)
-                                                          0.19      18.61 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_65_/U5/Y (INVX1_RVT)
-                                                          0.11      18.72 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_65_/U3/Y (XNOR3X1_RVT)
-                                                          0.19      18.91 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_65_/U2/Y (INVX1_RVT)
-                                                          0.11      19.02 f
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_65_/U4/Y (XNOR2X1_RVT)
-                                                          0.21      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sc3_65_/sum (mul_csa42_170)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/ary1_a0/sum[65] (mul_array1_0)     0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a0sum_dff/din[65] (dff_s_SIZE82_0)
-                                                          0.00      19.23 r
-  fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[65]/D (SDFFX1_RVT)
-                                                          0.09      19.32 r
-  data arrival time                                                 19.32
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_26_/a (mul_ppgen3_23)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_26_/p0/a (mul_ppgen_73)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_26_/p0/U6/Y (XOR2X1_RVT)
+                                                         33.00      34.12 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_26_/p0/U5/Y (NAND2X0_RVT)
+                                                          0.07      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_26_/p0/p_l (mul_ppgen_73)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_26_/p0_l (mul_ppgen3_23)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/p0m1_l (mul_ppgen3_24)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/p0/pm1_l (mul_ppgen_76)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/p0/U1/Y (OAI22X1_RVT)
+                                                          0.17      34.36 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/p0/z (mul_ppgen_76)
+                                                          0.00      34.36 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/sc1/b (mul_csa32_26)
+                                                          0.00      34.36 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/sc1/U2/Y (XOR2X1_RVT)
+                                                          0.20      34.56 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/sc1/U3/Y (XOR2X1_RVT)
+                                                          0.22      34.78 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/sc1/sum (mul_csa32_26)
+                                                          0.00      34.78 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/sum (mul_ppgen3_24)
+                                                          0.00      34.78 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/sum[27] (mul_ppgenrow3_1)
+                                                          0.00      34.78 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_27_/a (mul_csa32_678)
+                                                          0.00      34.78 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_27_/U1/Y (XOR2X1_RVT)
+                                                          0.20      34.98 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_27_/U2/Y (XOR2X1_RVT)
+                                                          0.20      35.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_27_/sum (mul_csa32_678)
+                                                          0.00      35.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_27_/d (mul_csa42_66)
+                                                          0.00      35.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_27_/U5/Y (XOR2X1_RVT)
+                                                          0.20      35.39 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_27_/U1/Y (INVX0_RVT)
+                                                          0.11      35.50 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_27_/U3/Y (XNOR3X1_RVT)
+                                                          0.20      35.70 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_27_/U7/Y (INVX1_RVT)
+                                                          0.11      35.81 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_27_/U6/Y (XNOR2X1_RVT)
+                                                          0.21      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_27_/sum (mul_csa42_66)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sum[27] (mul_array1_1)     0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/din[27] (dff_s_SIZE82_1)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[27]/D (SDFFX1_RVT)
+                                                          0.09      36.11 r
+  data arrival time                                                 36.11
 
-  clock ideal_clock1 (rise edge)                         10.00      10.00
-  clock network delay (ideal)                             0.40      10.40
-  clock uncertainty                                      -0.05      10.35
-  fpu_mul/i_m4stg_frac/a0sum_dff/q_reg[65]/CLK (SDFFX1_RVT)
-                                                          0.00      10.35 r
-  library setup time                                     -0.12      10.23
-  data required time                                                10.23
+  clock ideal_clock1 (rise edge)                         15.00      15.00
+  clock network delay (ideal)                             0.40      15.40
+  clock uncertainty                                      -0.05      15.35
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[27]/CLK (SDFFX1_RVT)
+                                                          0.00      15.35 r
+  library setup time                                     -0.12      15.23
+  data required time                                                15.23
   --------------------------------------------------------------------------
-  data required time                                                10.23
-  data arrival time                                                -19.32
+  data required time                                                15.23
+  data arrival time                                                -36.11
   --------------------------------------------------------------------------
-  slack (VIOLATED)                                                  -9.08
+  slack (VIOLATED)                                                 -20.88
+
+
+  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[26]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[29]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mul64              70000                 saed32rvt_ss0p95v25c
+  mul_ppgen_80       ForQA                 saed32rvt_ss0p95v25c
+  mul_ppgenrow3_1    8000                  saed32rvt_ss0p95v25c
+  mul_ppgen3_26      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa32_28       ForQA                 saed32rvt_ss0p95v25c
+  mul_array1_1       16000                 saed32rvt_ss0p95v25c
+  mul_csa32_680      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa42_68       ForQA                 saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.40       0.40
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[26]/CLK (SDFFX1_RVT)
+                                                          0.00       0.40 r
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[26]/Q (SDFFX1_RVT)     0.19       0.59 f
+  fpu_mul/i_m4stg_frac/ffrs1/q[26] (dff_s_SIZE64_1)       0.00       0.59 f
+  fpu_mul/i_m4stg_frac/U155/Y (IBUFFX2_RVT)               0.53       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/a[26] (mul_array1_1)       0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/a[26] (mul_ppgenrow3_1)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/am2 (mul_ppgen3_25)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/p1/a (mul_ppgen_80)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/p1/U5/Y (XOR2X1_RVT)
+                                                         33.00      34.12 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/p1/U4/Y (NAND2X0_RVT)
+                                                          0.08      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/p1/p_l (mul_ppgen_80)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/p1_l (mul_ppgen3_25)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_29_/p1m1_l (mul_ppgen3_26)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_29_/p1/pm1_l (mul_ppgen_83)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_29_/p1/U2/Y (OAI22X1_RVT)
+                                                          0.17      34.37 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_29_/p1/z (mul_ppgen_83)
+                                                          0.00      34.37 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_29_/sc1/a (mul_csa32_28)
+                                                          0.00      34.37 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_29_/sc1/U3/Y (XOR2X1_RVT)
+                                                          0.20      34.56 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_29_/sc1/U2/Y (XOR2X1_RVT)
+                                                          0.23      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_29_/sc1/sum (mul_csa32_28)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_29_/sum (mul_ppgen3_26)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/sum[29] (mul_ppgenrow3_1)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_29_/a (mul_csa32_680)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_29_/U1/Y (XOR2X1_RVT)
+                                                          0.19      34.98 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_29_/U2/Y (XOR2X1_RVT)
+                                                          0.23      35.21 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_29_/sum (mul_csa32_680)
+                                                          0.00      35.21 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_29_/d (mul_csa42_68)
+                                                          0.00      35.21 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_29_/U5/Y (XOR2X1_RVT)
+                                                          0.19      35.40 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_29_/U1/Y (INVX0_RVT)
+                                                          0.11      35.51 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_29_/U3/Y (XNOR3X1_RVT)
+                                                          0.20      35.70 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_29_/U7/Y (INVX1_RVT)
+                                                          0.11      35.81 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_29_/U6/Y (XNOR2X1_RVT)
+                                                          0.21      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_29_/sum (mul_csa42_68)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sum[29] (mul_array1_1)     0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/din[29] (dff_s_SIZE82_1)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[29]/D (SDFFX1_RVT)
+                                                          0.09      36.11 r
+  data arrival time                                                 36.11
+
+  clock ideal_clock1 (rise edge)                         15.00      15.00
+  clock network delay (ideal)                             0.40      15.40
+  clock uncertainty                                      -0.05      15.35
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[29]/CLK (SDFFX1_RVT)
+                                                          0.00      15.35 r
+  library setup time                                     -0.12      15.23
+  data required time                                                15.23
+  --------------------------------------------------------------------------
+  data required time                                                15.23
+  data arrival time                                                -36.11
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -20.88
+
+
+  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[45]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[48]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mul64              70000                 saed32rvt_ss0p95v25c
+  mul_ppgen_137      ForQA                 saed32rvt_ss0p95v25c
+  mul_ppgenrow3_1    8000                  saed32rvt_ss0p95v25c
+  mul_ppgen3_45      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa32_47       ForQA                 saed32rvt_ss0p95v25c
+  mul_array1_1       16000                 saed32rvt_ss0p95v25c
+  mul_csa32_699      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa42_87       ForQA                 saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.40       0.40
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[45]/CLK (SDFFX1_RVT)
+                                                          0.00       0.40 r
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[45]/Q (SDFFX1_RVT)     0.19       0.59 f
+  fpu_mul/i_m4stg_frac/ffrs1/q[45] (dff_s_SIZE64_1)       0.00       0.59 f
+  fpu_mul/i_m4stg_frac/U142/Y (IBUFFX2_RVT)               0.53       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/a[45] (mul_array1_1)       0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/a[45] (mul_ppgenrow3_1)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/am2 (mul_ppgen3_44)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/p1/a (mul_ppgen_137)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/p1/U5/Y (XOR2X1_RVT)
+                                                         33.00      34.12 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/p1/U4/Y (NAND2X0_RVT)
+                                                          0.08      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/p1/p_l (mul_ppgen_137)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_47_/p1_l (mul_ppgen3_44)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_48_/p1m1_l (mul_ppgen3_45)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_48_/p1/pm1_l (mul_ppgen_140)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_48_/p1/U2/Y (OAI22X1_RVT)
+                                                          0.17      34.37 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_48_/p1/z (mul_ppgen_140)
+                                                          0.00      34.37 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_48_/sc1/a (mul_csa32_47)
+                                                          0.00      34.37 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_48_/sc1/U2/Y (XOR2X1_RVT)
+                                                          0.20      34.56 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_48_/sc1/U3/Y (XOR2X1_RVT)
+                                                          0.23      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_48_/sc1/sum (mul_csa32_47)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_48_/sum (mul_ppgen3_45)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/sum[48] (mul_ppgenrow3_1)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_48_/a (mul_csa32_699)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_48_/U1/Y (XOR2X1_RVT)
+                                                          0.19      34.98 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_48_/U2/Y (XOR2X1_RVT)
+                                                          0.23      35.21 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_48_/sum (mul_csa32_699)
+                                                          0.00      35.21 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_48_/d (mul_csa42_87)
+                                                          0.00      35.21 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_48_/U5/Y (XOR2X1_RVT)
+                                                          0.19      35.40 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_48_/U1/Y (INVX0_RVT)
+                                                          0.11      35.51 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_48_/U3/Y (XNOR3X1_RVT)
+                                                          0.20      35.70 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_48_/U7/Y (INVX1_RVT)
+                                                          0.11      35.81 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_48_/U6/Y (XNOR2X1_RVT)
+                                                          0.21      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_48_/sum (mul_csa42_87)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sum[48] (mul_array1_1)     0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/din[48] (dff_s_SIZE82_1)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[48]/D (SDFFX1_RVT)
+                                                          0.09      36.11 r
+  data arrival time                                                 36.11
+
+  clock ideal_clock1 (rise edge)                         15.00      15.00
+  clock network delay (ideal)                             0.40      15.40
+  clock uncertainty                                      -0.05      15.35
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[48]/CLK (SDFFX1_RVT)
+                                                          0.00      15.35 r
+  library setup time                                     -0.12      15.23
+  data required time                                                15.23
+  --------------------------------------------------------------------------
+  data required time                                                15.23
+  data arrival time                                                -36.11
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -20.88
+
+
+  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[39]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[39]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mul64              70000                 saed32rvt_ss0p95v25c
+  mul_ppgen_112      ForQA                 saed32rvt_ss0p95v25c
+  mul_ppgenrow3_1    8000                  saed32rvt_ss0p95v25c
+  mul_ppgen3_36      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa32_38       ForQA                 saed32rvt_ss0p95v25c
+  mul_array1_1       16000                 saed32rvt_ss0p95v25c
+  mul_csa32_690      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa42_78       ForQA                 saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.40       0.40
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[39]/CLK (SDFFX1_RVT)
+                                                          0.00       0.40 r
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[39]/Q (SDFFX1_RVT)     0.19       0.59 f
+  fpu_mul/i_m4stg_frac/ffrs1/q[39] (dff_s_SIZE64_1)       0.00       0.59 f
+  fpu_mul/i_m4stg_frac/U111/Y (IBUFFX2_RVT)               0.53       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/a[39] (mul_array1_1)       0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/a[39] (mul_ppgenrow3_1)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_39_/a (mul_ppgen3_36)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_39_/p0/a (mul_ppgen_112)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_39_/p0/U5/Y (XOR2X1_RVT)
+                                                         33.00      34.12 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_39_/p0/U4/Y (NAND2X0_RVT)
+                                                          0.07      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_39_/p0/U1/Y (OAI22X1_RVT)
+                                                          0.15      34.34 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_39_/p0/z (mul_ppgen_112)
+                                                          0.00      34.34 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_39_/sc1/b (mul_csa32_38)
+                                                          0.00      34.34 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_39_/sc1/U2/Y (XOR2X1_RVT)
+                                                          0.20      34.54 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_39_/sc1/U3/Y (XOR2X1_RVT)
+                                                          0.22      34.76 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_39_/sc1/sum (mul_csa32_38)
+                                                          0.00      34.76 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_39_/sum (mul_ppgen3_36)
+                                                          0.00      34.76 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/sum[39] (mul_ppgenrow3_1)
+                                                          0.00      34.76 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_39_/a (mul_csa32_690)
+                                                          0.00      34.76 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_39_/U1/Y (XOR2X1_RVT)
+                                                          0.20      34.97 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_39_/U2/Y (XOR2X1_RVT)
+                                                          0.22      35.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_39_/sum (mul_csa32_690)
+                                                          0.00      35.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_39_/d (mul_csa42_78)
+                                                          0.00      35.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_39_/U5/Y (XOR2X1_RVT)
+                                                          0.20      35.39 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_39_/U1/Y (INVX0_RVT)
+                                                          0.11      35.51 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_39_/U3/Y (XNOR3X1_RVT)
+                                                          0.20      35.70 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_39_/U7/Y (INVX1_RVT)
+                                                          0.11      35.81 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_39_/U6/Y (XNOR2X1_RVT)
+                                                          0.21      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_39_/sum (mul_csa42_78)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sum[39] (mul_array1_1)     0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/din[39] (dff_s_SIZE82_1)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[39]/D (SDFFX1_RVT)
+                                                          0.09      36.11 r
+  data arrival time                                                 36.11
+
+  clock ideal_clock1 (rise edge)                         15.00      15.00
+  clock network delay (ideal)                             0.40      15.40
+  clock uncertainty                                      -0.05      15.35
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[39]/CLK (SDFFX1_RVT)
+                                                          0.00      15.35 r
+  library setup time                                     -0.12      15.23
+  data required time                                                15.23
+  --------------------------------------------------------------------------
+  data required time                                                15.23
+  data arrival time                                                -36.11
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -20.88
+
+
+  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[25]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[28]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mul64              70000                 saed32rvt_ss0p95v25c
+  mul_ppgen_77       ForQA                 saed32rvt_ss0p95v25c
+  mul_ppgenrow3_1    8000                  saed32rvt_ss0p95v25c
+  mul_ppgen3_25      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa32_27       ForQA                 saed32rvt_ss0p95v25c
+  mul_array1_1       16000                 saed32rvt_ss0p95v25c
+  mul_csa32_679      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa42_67       ForQA                 saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.40       0.40
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[25]/CLK (SDFFX1_RVT)
+                                                          0.00       0.40 r
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[25]/Q (SDFFX1_RVT)     0.19       0.59 f
+  fpu_mul/i_m4stg_frac/ffrs1/q[25] (dff_s_SIZE64_1)       0.00       0.59 f
+  fpu_mul/i_m4stg_frac/U158/Y (IBUFFX2_RVT)               0.53       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/a[25] (mul_array1_1)       0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/a[25] (mul_ppgenrow3_1)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/am2 (mul_ppgen3_24)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/p1/a (mul_ppgen_77)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/p1/U5/Y (XOR2X1_RVT)
+                                                         33.00      34.12 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/p1/U4/Y (NAND2X0_RVT)
+                                                          0.08      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/p1/p_l (mul_ppgen_77)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_27_/p1_l (mul_ppgen3_24)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/p1m1_l (mul_ppgen3_25)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/p1/pm1_l (mul_ppgen_80)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/p1/U2/Y (OAI22X1_RVT)
+                                                          0.17      34.37 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/p1/z (mul_ppgen_80)
+                                                          0.00      34.37 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/sc1/a (mul_csa32_27)
+                                                          0.00      34.37 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/sc1/U3/Y (XOR2X1_RVT)
+                                                          0.20      34.56 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/sc1/U2/Y (XOR2X1_RVT)
+                                                          0.23      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/sc1/sum (mul_csa32_27)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_28_/sum (mul_ppgen3_25)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/sum[28] (mul_ppgenrow3_1)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_28_/a (mul_csa32_679)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_28_/U2/Y (XOR2X1_RVT)
+                                                          0.19      34.98 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_28_/U3/Y (XOR2X1_RVT)
+                                                          0.23      35.21 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_28_/sum (mul_csa32_679)
+                                                          0.00      35.21 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_28_/d (mul_csa42_67)
+                                                          0.00      35.21 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_28_/U3/Y (XOR2X1_RVT)
+                                                          0.19      35.40 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_28_/U5/Y (INVX1_RVT)
+                                                          0.11      35.51 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_28_/U4/Y (XNOR3X1_RVT)
+                                                          0.19      35.70 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_28_/U7/Y (INVX1_RVT)
+                                                          0.11      35.81 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_28_/U6/Y (XNOR2X1_RVT)
+                                                          0.21      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_28_/sum (mul_csa42_67)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sum[28] (mul_array1_1)     0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/din[28] (dff_s_SIZE82_1)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[28]/D (SDFFX1_RVT)
+                                                          0.09      36.11 r
+  data arrival time                                                 36.11
+
+  clock ideal_clock1 (rise edge)                         15.00      15.00
+  clock network delay (ideal)                             0.40      15.40
+  clock uncertainty                                      -0.05      15.35
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[28]/CLK (SDFFX1_RVT)
+                                                          0.00      15.35 r
+  library setup time                                     -0.12      15.23
+  data required time                                                15.23
+  --------------------------------------------------------------------------
+  data required time                                                15.23
+  data arrival time                                                -36.11
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -20.88
+
+
+  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[39]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[42]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mul64              70000                 saed32rvt_ss0p95v25c
+  mul_ppgen_119      ForQA                 saed32rvt_ss0p95v25c
+  mul_ppgenrow3_1    8000                  saed32rvt_ss0p95v25c
+  mul_ppgen3_39      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa32_41       ForQA                 saed32rvt_ss0p95v25c
+  mul_array1_1       16000                 saed32rvt_ss0p95v25c
+  mul_csa32_693      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa42_81       ForQA                 saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.40       0.40
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[39]/CLK (SDFFX1_RVT)
+                                                          0.00       0.40 r
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[39]/Q (SDFFX1_RVT)     0.19       0.59 f
+  fpu_mul/i_m4stg_frac/ffrs1/q[39] (dff_s_SIZE64_1)       0.00       0.59 f
+  fpu_mul/i_m4stg_frac/U111/Y (IBUFFX2_RVT)               0.53       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/a[39] (mul_array1_1)       0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/a[39] (mul_ppgenrow3_1)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_41_/am2 (mul_ppgen3_38)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_41_/p1/a (mul_ppgen_119)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_41_/p1/U5/Y (XOR2X1_RVT)
+                                                         33.00      34.12 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_41_/p1/U4/Y (NAND2X0_RVT)
+                                                          0.08      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_41_/p1/p_l (mul_ppgen_119)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_41_/p1_l (mul_ppgen3_38)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_42_/p1m1_l (mul_ppgen3_39)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_42_/p1/pm1_l (mul_ppgen_122)
+                                                          0.00      34.20 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_42_/p1/U2/Y (OAI22X1_RVT)
+                                                          0.17      34.37 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_42_/p1/z (mul_ppgen_122)
+                                                          0.00      34.37 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_42_/sc1/a (mul_csa32_41)
+                                                          0.00      34.37 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_42_/sc1/U3/Y (XOR2X1_RVT)
+                                                          0.20      34.57 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_42_/sc1/U2/Y (XOR2X1_RVT)
+                                                          0.23      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_42_/sc1/sum (mul_csa32_41)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_42_/sum (mul_ppgen3_39)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/sum[42] (mul_ppgenrow3_1)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_42_/a (mul_csa32_693)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_42_/U2/Y (XOR2X1_RVT)
+                                                          0.19      34.99 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_42_/U3/Y (XOR2X1_RVT)
+                                                          0.23      35.21 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_42_/sum (mul_csa32_693)
+                                                          0.00      35.21 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_42_/d (mul_csa42_81)
+                                                          0.00      35.21 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_42_/U5/Y (XOR2X1_RVT)
+                                                          0.19      35.40 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_42_/U2/Y (INVX0_RVT)
+                                                          0.11      35.51 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_42_/U1/Y (XNOR3X2_RVT)
+                                                          0.18      35.69 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_42_/U7/Y (INVX1_RVT)
+                                                          0.12      35.81 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_42_/U6/Y (XNOR2X1_RVT)
+                                                          0.21      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_42_/sum (mul_csa42_81)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sum[42] (mul_array1_1)     0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/din[42] (dff_s_SIZE82_1)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[42]/D (SDFFX1_RVT)
+                                                          0.09      36.11 r
+  data arrival time                                                 36.11
+
+  clock ideal_clock1 (rise edge)                         15.00      15.00
+  clock network delay (ideal)                             0.40      15.40
+  clock uncertainty                                      -0.05      15.35
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[42]/CLK (SDFFX1_RVT)
+                                                          0.00      15.35 r
+  library setup time                                     -0.12      15.23
+  data required time                                                15.23
+  --------------------------------------------------------------------------
+  data required time                                                15.23
+  data arrival time                                                -36.11
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -20.87
+
+
+  Startpoint: fpu_mul/i_m4stg_frac/ffrs1/q_reg[18]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[19]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mul64              70000                 saed32rvt_ss0p95v25c
+  mul_ppgen_49       ForQA                 saed32rvt_ss0p95v25c
+  mul_ppgenrow3_1    8000                  saed32rvt_ss0p95v25c
+  mul_ppgen3_16      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa32_18       ForQA                 saed32rvt_ss0p95v25c
+  mul_array1_1       16000                 saed32rvt_ss0p95v25c
+  mul_csa32_670      ForQA                 saed32rvt_ss0p95v25c
+  mul_csa42_58       ForQA                 saed32rvt_ss0p95v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (ideal)                             0.40       0.40
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[18]/CLK (SDFFX1_RVT)
+                                                          0.00       0.40 r
+  fpu_mul/i_m4stg_frac/ffrs1/q_reg[18]/Q (SDFFX1_RVT)     0.19       0.59 f
+  fpu_mul/i_m4stg_frac/ffrs1/q[18] (dff_s_SIZE64_1)       0.00       0.59 f
+  fpu_mul/i_m4stg_frac/U75/Y (IBUFFX2_RVT)                0.53       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/a[18] (mul_array1_1)       0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/a[18] (mul_ppgenrow3_1)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/a (mul_ppgen3_15)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/p0/a (mul_ppgen_49)
+                                                          0.00       1.12 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/p0/U5/Y (XOR2X1_RVT)
+                                                         33.00      34.12 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/p0/U4/Y (NAND2X0_RVT)
+                                                          0.07      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/p0/p_l (mul_ppgen_49)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_18_/p0_l (mul_ppgen3_15)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_19_/p0m1_l (mul_ppgen3_16)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_19_/p0/pm1_l (mul_ppgen_52)
+                                                          0.00      34.19 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_19_/p0/U1/Y (OAI22X2_RVT)
+                                                          0.16      34.35 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_19_/p0/z (mul_ppgen_52)
+                                                          0.00      34.35 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_19_/sc1/b (mul_csa32_18)
+                                                          0.00      34.35 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_19_/sc1/U2/Y (XOR2X1_RVT)
+                                                          0.21      34.57 r
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_19_/sc1/U3/Y (XOR2X1_RVT)
+                                                          0.23      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_19_/sc1/sum (mul_csa32_18)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/I1_19_/sum (mul_ppgen3_16)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/I0/sum[19] (mul_ppgenrow3_1)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_19_/a (mul_csa32_670)
+                                                          0.00      34.79 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_19_/U2/Y (XOR2X1_RVT)
+                                                          0.19      34.99 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_19_/U3/Y (XOR2X1_RVT)
+                                                          0.23      35.22 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc2_1_19_/sum (mul_csa32_670)
+                                                          0.00      35.22 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_19_/d (mul_csa42_58)
+                                                          0.00      35.22 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_19_/U4/Y (XOR2X2_RVT)
+                                                          0.19      35.41 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_19_/U2/Y (INVX0_RVT)
+                                                          0.10      35.51 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_19_/U1/Y (XNOR3X2_RVT)
+                                                          0.18      35.69 f
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_19_/U3/Y (INVX1_RVT)
+                                                          0.12      35.81 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_19_/U7/Y (XNOR2X1_RVT)
+                                                          0.21      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sc3_19_/sum (mul_csa42_58)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/ary1_a1/sum[19] (mul_array1_1)     0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/din[19] (dff_s_SIZE82_1)
+                                                          0.00      36.02 r
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[19]/D (SDFFX1_RVT)
+                                                          0.09      36.11 r
+  data arrival time                                                 36.11
+
+  clock ideal_clock1 (rise edge)                         15.00      15.00
+  clock network delay (ideal)                             0.40      15.40
+  clock uncertainty                                      -0.05      15.35
+  fpu_mul/i_m4stg_frac/a1sum_dff/q_reg[19]/CLK (SDFFX1_RVT)
+                                                          0.00      15.35 r
+  library setup time                                     -0.12      15.23
+  data required time                                                15.23
+  --------------------------------------------------------------------------
+  data required time                                                15.23
+  data arrival time                                                -36.11
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                 -20.87
 
 
 1
